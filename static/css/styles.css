@@ -109,6 +109,7 @@ header {
     font-size: 24px;
     font-family: "GilroyBold";
     z-index: -1;
+    top: 0;
 }
 .search{
   margin-top: 17px;

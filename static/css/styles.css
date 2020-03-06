@@ -173,6 +173,10 @@ ul>li{
 #demo-2 input[type=search]:focus {
   width: calc(100vw - 100px);
   }
+  #demo-2 input[type=search]:hover {
+    background-color: #FBFBFD;
+    width: calc(100vw - 80px);
+  }
 }
 /* ------------------------------------------
   NAVIGATION STYLES

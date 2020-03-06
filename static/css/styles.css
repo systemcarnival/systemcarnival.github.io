@@ -12,8 +12,7 @@
 
 
 
-@-webkit-viewport { width: device-width; }
-@-moz-viewport { width: device-width; }
+
 @-ms-viewport { width: device-width; }
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
@@ -287,7 +286,6 @@ ul>li{
   position: absolute;
   content: url(../img/Vector1.svg); /* Hamburger icon */
   text-indent: 0;
-  speak: none;
   width: 100%;
   left: 0;
   top: 0;

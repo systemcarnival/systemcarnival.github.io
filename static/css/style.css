@@ -54,7 +54,8 @@ a{
     background-size: cover;
     height: 220px;
     box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 10.77px 27.72px rgba(0, 0, 0, 0.15);
-border-radius: 11px;
+    border-radius: 11px;
+    max-width: 700px;
 }
 .h-text{
     font-family: "GilroyBold"; 
@@ -261,7 +262,7 @@ border-radius: 11px;
 }
 .links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .hr{
     font-size: 18px;
@@ -289,6 +290,7 @@ footer{
 }
 .links, .infowrap, .progresswrap, .button-wrap, .h-text, .wraprecent, .wrapview{
     padding: 15px 0;
+    max-width: 1120px;   
 }
 @font-face {
     font-family: "GilroyBold"; 
@@ -385,4 +387,35 @@ input:-moz-placeholder {
 }
 input::-webkit-input-placeholder {
 	color: #73738D;
+}
+.wraplog{
+    text-align: center;
+    padding: 70px 0;
+}
+.log{
+    width: fit-content;
+    margin: auto;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 4.77px 27.72px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center;
+    padding: 12px 20px;
+}
+input[type=email],input[type=password]{
+    cursor: pointer;
+    font-family: 'GilroyMedium';
+    font-size: 18px;
+    background-color: #FBFBFD;
+	border: solid 1px transparent;
+	padding: 9px 10px 9px 32px;
+	width: 100%;
+	-webkit-border-radius: 29.8014px;
+	-moz-border-radius: 29.8014px;
+    border-radius: 29.8014px;
+    margin: 15px 0;
+}
+.login{
+    width: 100%;
+    max-width: 330px;
+    display: flex;
+    flex-wrap: wrap;
 }

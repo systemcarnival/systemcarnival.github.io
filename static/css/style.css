@@ -338,9 +338,6 @@ footer{
     font-family: 'GilroyMedium';
     font-size: 18px;
 }
-#demo-2 input[type=search]:hover {
-	background-color: #FBFBFD;
-}
 #demo-2 input[type=search]:focus {
 	width: 291px;
 	padding-left: 42px;

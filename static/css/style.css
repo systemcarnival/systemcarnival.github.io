@@ -315,3 +315,74 @@ footer{
     font-style: normal; 
     font-weight: normal; 
 }
+
+
+
+
+
+
+
+/* Demo 2 */
+#demo-2{
+    display: inline-block;
+    margin-top: 8px;
+    padding-left: 20px;
+}
+#demo-2 input[type=search] {
+	width: 291px;
+	padding-left: 42px;
+	color: transparent;
+    cursor: pointer;
+    font-family: 'GilroyMedium';
+    font-size: 18px;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #FBFBFD;
+}
+#demo-2 input[type=search]:focus {
+	width: 291px;
+	padding-left: 42px;
+	color: #000;
+	background-color: #FBFBFD;
+    cursor: auto;
+    z-index: 999;
+}
+/* #demo-2 input:-moz-placeholder {
+    padding-left: 15px;
+} */
+#demo-2 input::-webkit-input-placeholder {
+    font-family: 'GilroyMedium';
+    font-size: 18px;
+}    
+input {
+    outline: none;
+    font-family: 'GilroyMedium';
+    font-size: 18px;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+	background: #FBFBFD url(../img/uil_search.svg) no-repeat 9px center;
+	border: solid 1px transparent;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	
+	-webkit-border-radius: 29.8014px;
+	-moz-border-radius: 29.8014px;
+	border-radius: 29.8014px;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+
+input:-moz-placeholder {
+	color: #73738D;
+}
+input::-webkit-input-placeholder {
+	color: #73738D;
+}

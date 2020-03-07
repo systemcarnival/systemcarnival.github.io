@@ -397,7 +397,7 @@ input::-webkit-input-placeholder {
     text-align: center;
     padding: 12px 20px;
 }
-input[type=email],input[type=password]{
+input[type=email],input[type=password],input[type=text]{
     cursor: text;
     font-family: 'GilroyMedium';
     font-size: 18px;

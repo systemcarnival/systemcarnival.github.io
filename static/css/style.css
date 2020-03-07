@@ -334,7 +334,7 @@ footer{
 	width: 291px;
 	padding-left: 42px;
 	color: transparent;
-    cursor: pointer;
+    cursor: text;
     font-family: 'GilroyMedium';
     font-size: 18px;
 }
@@ -342,8 +342,8 @@ footer{
 	width: 291px;
 	padding-left: 42px;
 	color: #000;
-	background-color: #FBFBFD;
-    cursor: auto;
+	background-color: #F4F4F4;
+    cursor: text;
     z-index: 999;
 }
 /* #demo-2 input:-moz-placeholder {
@@ -365,7 +365,7 @@ input::-webkit-search-cancel-button {
 
 
 input[type=search] {
-	background: #FBFBFD url(../img/uil_search.svg) no-repeat 9px center;
+	background: #F4F4F4 url(../img/uil_search.svg) no-repeat 9px center;
 	border: solid 1px transparent;
 	padding: 9px 10px 9px 32px;
 	width: 55px;
@@ -398,10 +398,10 @@ input::-webkit-input-placeholder {
     padding: 12px 20px;
 }
 input[type=email],input[type=password]{
-    cursor: pointer;
+    cursor: text;
     font-family: 'GilroyMedium';
     font-size: 18px;
-    background-color: #FBFBFD;
+    background-color: #F4F4F4;
 	border: solid 1px transparent;
 	padding: 9px 10px 9px 32px;
 	width: 100%;
@@ -415,4 +415,16 @@ input[type=email],input[type=password]{
     max-width: 330px;
     display: flex;
     flex-wrap: wrap;
+}
+.inp{
+    display: flex;
+    width: 48%;
+}
+.inputrow{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cl{
+    color: #1943EF;
 }

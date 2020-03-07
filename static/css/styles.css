@@ -1,26 +1,6 @@
-/* =============================================
- *
- *   FIXED RESPONSIVE NAV
- *
- *   (c) 2014 @adtileHQ
- *   http://www.adtile.me
- *   http://twitter.com/adtilehq
- *
- *   Free to use under the MIT License.
- *
- * ============================================= */
-
-
-
-
 @-ms-viewport { width: device-width; }
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
-
-
-/* ------------------------------------------
-  RESPONSIVE NAV STYLES
---------------------------------------------- */
 
 .nav-collapse ul {
   margin: 0;
@@ -75,18 +55,6 @@
 }
 
 
-/* ------------------------------------------
-  DEMO STYLES
---------------------------------------------- */
-
-
-
-
-
-/* ------------------------------------------
-  FIXED HEADER
---------------------------------------------- */
-
 header {
   position: fixed;
   z-index: 3;
@@ -122,10 +90,6 @@ ul>li{
   font-family: 'GilroyMedium';
   font-size: 18px;
 }
-
-/* ------------------------------------------
-  MASK
---------------------------------------------- */
 
 .mask {
   -webkit-transition: opacity 300ms;
@@ -165,7 +129,7 @@ ul>li{
     color: transparent;
 }  
   #demo-2 input[type=search] {
-    background: #FBFBFD url(../img/Vector-1.svg) no-repeat 9px center;
+    background: #F4F4F4 url(../img/Vector-1.svg) no-repeat 9px center;
     background-color: #fff;
     z-index: 1000;
     width: 15px;
@@ -173,11 +137,16 @@ ul>li{
 #demo-2 input[type=search]:focus {
   width: calc(100vw - 100px);
   }
+  .inputrow{
+    display: block;
+  }
+  .inp{
+    width: 100%;
+  }
+  .wraplog {
+    padding: 20px 0;
 }
-/* ------------------------------------------
-  NAVIGATION STYLES
---------------------------------------------- */
-
+}
 .fixed {
   position: fixed;
   width: 100%;
@@ -247,10 +216,6 @@ ul>li{
   }
 }
 
-
-/* ------------------------------------------
-  NAV TOGGLE STYLES
---------------------------------------------- */
 
 @font-face {
   font-family: "responsivenav";

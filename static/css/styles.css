@@ -1,6 +1,26 @@
+/* =============================================
+ *
+ *   FIXED RESPONSIVE NAV
+ *
+ *   (c) 2014 @adtileHQ
+ *   http://www.adtile.me
+ *   http://twitter.com/adtilehq
+ *
+ *   Free to use under the MIT License.
+ *
+ * ============================================= */
+
+
+
+
 @-ms-viewport { width: device-width; }
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
+
+
+/* ------------------------------------------
+  RESPONSIVE NAV STYLES
+--------------------------------------------- */
 
 .nav-collapse ul {
   margin: 0;
@@ -42,7 +62,7 @@
   user-select: none;
 }
 
-@media screen and (min-width: 56em) {
+@media screen and (min-width: 59em) {
   .js .nav-collapse {
     position: relative;
   }
@@ -55,6 +75,18 @@
 }
 
 
+/* ------------------------------------------
+  DEMO STYLES
+--------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------
+  FIXED HEADER
+--------------------------------------------- */
+
 header {
   position: fixed;
   z-index: 3;
@@ -65,18 +97,18 @@ header {
   box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
 }
 
-.logo {
+.logotype {
   text-decoration: none;
   font-weight: bold;
   /* line-height: 61px; */
   position: absolute;
-    left: 50%;
-    margin-left: -90px;
-    margin-top: 12.5px;
+  top: 12.5px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
     font-size: 24px;
     font-family: "GilroyBold";
-    z-index: -1;
-    top: 0;
+    z-index: 2;
 }
 .search{
   margin-top: 17px;
@@ -90,6 +122,10 @@ ul>li{
   font-family: 'GilroyMedium';
   font-size: 18px;
 }
+
+/* ------------------------------------------
+  MASK
+--------------------------------------------- */
 
 .mask {
   -webkit-transition: opacity 300ms;
@@ -115,13 +151,29 @@ ul>li{
   opacity: 1;
 }
 
-@media screen and (min-width: 56em) {
+@media screen and (min-width: 59em) {
   .mask {
     display: none !important;
     opacity: 0 !important;
   }
+  .wr{
+    width: 48%;
+  }
+  .description, .infowrap{
+    width: 100%;
+  }
+  /* .progress{
+    max-width: 500px;
+  } */
+  .img-wrapper{
+    max-width: 50.1%;
+  }
+  .progresswrap{
+    margin: 0;
+    width: 48%;
+  }
 }
-@media screen and (max-width: 56em) {
+@media screen and (max-width: 59em) {
   /* header{
     background-color: red;
   } */
@@ -129,7 +181,7 @@ ul>li{
     color: transparent;
 }  
   #demo-2 input[type=search] {
-    background: #F4F4F4 url(../img/Vector-1.svg) no-repeat 9px center;
+    background: #FBFBFD url(../img/Vector-1.svg) no-repeat 9px center;
     background-color: #fff;
     z-index: 1000;
     width: 15px;
@@ -137,16 +189,23 @@ ul>li{
 #demo-2 input[type=search]:focus {
   width: calc(100vw - 100px);
   }
-  .inputrow{
-    display: block;
-  }
-  .inp{
-    width: 100%;
-  }
   .wraplog {
     padding: 20px 0;
 }
+.inp {
+  width: 100%;
 }
+.inputrow {
+  display: block;
+}
+.button-wrap {
+  padding: 45px 25px 25px 25px;
+}
+}
+/* ------------------------------------------
+  NAVIGATION STYLES
+--------------------------------------------- */
+
 .fixed {
   position: fixed;
   width: 100%;
@@ -168,7 +227,7 @@ ul>li{
   float: left;
 }
 
-@media screen and (min-width: 56em) {
+@media screen and (min-width: 59em) {
   .nav-collapse {
     float: right;
     width: auto;
@@ -180,7 +239,7 @@ ul>li{
   width: 100%;
 }
 
-@media screen and (min-width: 56em) {
+@media screen and (min-width: 59em) {
   .nav-collapse li {
     width: auto;
   }
@@ -196,7 +255,7 @@ ul>li{
 
 
 
-@media screen and (min-width: 56em) {
+@media screen and (min-width: 59em) {
   .nav-collapse a {
     padding: 1.02em 2em;
     text-align: center;
@@ -210,12 +269,16 @@ ul>li{
   padding-left: 2em;
 }
 
-@media screen and (min-width: 56em) {
+@media screen and (min-width: 59em) {
   .nav-collapse ul ul a {
     display: none;
   }
 }
 
+
+/* ------------------------------------------
+  NAV TOGGLE STYLES
+--------------------------------------------- */
 
 @font-face {
   font-family: "responsivenav";

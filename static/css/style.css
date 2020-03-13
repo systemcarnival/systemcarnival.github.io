@@ -14,6 +14,7 @@ a{
     align-items: center;
     font-size: 24px;
     padding: 25px 22px 18px 22px;
+    
 }
 .wrap-header{
     width: 100%;
@@ -25,6 +26,11 @@ a{
 .content{
     padding: 10px;
     padding-top: 85px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1120px;
+    justify-content: space-between;
 }
 .ac{
     text-align: center;
@@ -42,6 +48,10 @@ a{
     margin: auto;
     padding: 50px 0;
 }
+.progresswrap{
+    width: 100%;
+    padding-top: 30px;
+}
 .progress{
     display: grid;
     padding: 20px 0;
@@ -55,13 +65,22 @@ a{
     height: 220px;
     box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 10.77px 27.72px rgba(0, 0, 0, 0.15);
     border-radius: 11px;
-    max-width: 700px;
+    /* max-width: 700px; */
+    /* margin: 0 auto; */
+    width: 100%;
+}
+.w100{
+    width: 100%;
 }
 .h-text{
     font-family: "GilroyBold"; 
     font-size: 24px;
     margin: 0;
-    padding-top: 30px!important;;
+    padding-top: 30px!important;
+}
+.ht{
+    padding-top: 0!important;
+    padding-bottom: 30px!important;
 }
 .percentage{
     position: relative;
@@ -111,6 +130,7 @@ a{
 .button{
     font-family: "GilroySemiBold"; 
     width: 100%;
+    max-width: 400px;
     text-align: center;
     background: #1943EF;
     border-radius: 33.96px;
@@ -119,9 +139,10 @@ a{
     color: #FFFFFF;
     box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.15), 0px 5.77px 27.72px rgba(0, 0, 0, 0.15);
     padding: 15px 0 ;
+    margin: auto;
 }
 .button-wrap{
-    padding: 45px 0;
+    padding: 45px 25px;
 }
 .button p{
     margin: 0;
@@ -130,8 +151,9 @@ a{
     color: #383850;
     font-family: "GilroyMedium"; 
     font-size: 18px;
-    margin: 0;
-    padding: 16px 7px;
+    margin: 0 auto;
+    padding: 30px 7px;
+    max-width: 1120px;
 }
 .avatar{
     width: 47px;
@@ -287,10 +309,14 @@ footer{
     font-size: 14px;
     font-family: "GilroyMedium";
     color: #73738D;
+    width: 100%;
 }
-.links, .infowrap, .progresswrap, .button-wrap, .h-text, .wraprecent, .wrapview{
+.links, .infowrap, .h-text, .wraprecent, .wrapview{
     padding: 15px 0;
-    max-width: 1120px;   
+    margin: 0 auto;
+}
+.wr{
+    width: 100%;
 }
 @font-face {
     font-family: "GilroyBold"; 
@@ -343,7 +369,7 @@ footer{
 	padding-left: 42px;
 	color: #000;
 	background-color: #F4F4F4;
-    cursor: text;
+    cursor: auto;
     z-index: 999;
 }
 /* #demo-2 input:-moz-placeholder {
@@ -385,9 +411,10 @@ input:-moz-placeholder {
 input::-webkit-input-placeholder {
 	color: #73738D;
 }
-.wraplog{
+.wrap   {
     text-align: center;
     padding: 70px 0;
+    margin: auto;
 }
 .log{
     width: fit-content;
@@ -396,6 +423,11 @@ input::-webkit-input-placeholder {
     border-radius: 12px;
     text-align: center;
     padding: 12px 20px;
+}
+.inputrow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 input[type=email],input[type=password],input[type=text]{
     cursor: text;
@@ -416,15 +448,73 @@ input[type=email],input[type=password],input[type=text]{
     display: flex;
     flex-wrap: wrap;
 }
-.inp{
+.cl {
+    color: #1943EF;
+}
+.inp {
     display: flex;
     width: 48%;
 }
-.inputrow{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.fordesktop{
+    display: none;
 }
-.cl{
+.dn{
+    display: block;
+}
+
+
+.infowrap{
+    padding-top: 30px;
+}
+
+@media (min-width: 960.98px) {
+    .dn{
+        display: none;
+    }
+    footer{
+        order: 10;
+    }
+    .img-wrapper{
+        max-width: 100%!important;
+    }
+    .h-text{
+        order: 1;
+    }
+    .wr{
+        order: 2;
+    }
+    .progresswrap{
+        order: 3;
+        padding-top: 0;
+    }
+    .fordesktop{
+        display: block;
+    }
+    .description{
+        padding: 44px 7px;
+    }
+  }
+
+
+  input[type=submit] {
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
+    background: #FFFFFF;
+    border: 2px solid #1943EF;
+    box-sizing: border-box;
+    border-radius: 33.96px;
+    padding: 10px 50px;
     color: #1943EF;
+    font-family: "GilroySemiBold";
+    font-size: 16px;
+    margin: auto;
+  }
+ 
+  .wraplog {
+    text-align: center;
+    padding: 70px 0;
+    margin: auto;
 }
+
+  input:focus ~ .logotype, .logotype:focus {
+    z-index: -1;
+  }

@@ -6,10 +6,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../static/css/style.css">
-
     <link rel="stylesheet" href="../static/css/styles.css">
     <script src="../static/js/responsive-nav.js"></script>
-
 </head>
 
 <body>
@@ -18,7 +16,7 @@
             <form id="demo-2">
                 <input type="search" placeholder="Search">
                 <a href="signin.html" class="logotype">System Carnival</a>
-              </form>
+            </form>
             <nav class="nav-collapse">
                 <ul>
                     <li class="menu-item"><a href="index.html">Projects</a></li>
@@ -28,7 +26,6 @@
             </nav>
         </header>
     </div>
-
     <div class="content">
         <div class="wraplog">
             <div class="log">
@@ -45,17 +42,35 @@
                     <input type="email" name="email" id="email" placeholder="Enter your e-mail">
                     <input type="password" name="password" id="password" placeholder="Enter your password">
                     <input type="password" name="password" id="password" placeholder="Confirm your password">
-                    <div class="wrapview">
+                    <!-- <div class="wrapview">
                         <a href="">
                             <div class="view">Sign Up</div>
                         </a>
-                    </div>
-                    <input type="submit" value="Sign Up">
+                    </div> -->
+                    <input id="role-0" name="role" type="radio" value="Philanthropist">
+                    <label for="role-0" class="label left-l">Philanthropist</label>
+                    <input id="role-1" name="role" type="radio" value="help-seeker">
+                    <label for="role-1" class="label right-l">Help-seeker</label>
                 </form>
+                <!-- <div class="choice">
+                    <label for="phil" class="phil">
+                        <input type="radio" id="phil" name="acc" checked>
+                        <div class="radioch">
+                            Philanthropist
+                        </div>
+                    </label>
+                    <label for="help" class="help">
+                        <input type="radio" id="help" name="acc">
+                        <div class="radioch">
+                            Help-seeker
+                        </div>
+                    </label>
+                </div> -->
+
+
+                <input type="submit" value="Sign Up">
             </div>
         </div>
-
-
         <footer>
             <div class="links">
                 <div class="block1">
@@ -80,7 +95,6 @@
             </div>
         </footer>
     </div>
-
     <script src="../static/js/fastclick.js"></script>
     <script src="../static/js/scroll.js"></script>
     <script src="../static/js/fixed-responsive-nav.js"></script>

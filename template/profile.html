@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <script src="../static/js/responsive-nav.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+            var data = new google.visualization.arrayToDataTable([
+                ['Donation activity by months', '$'],
+                ['Jan', 1200],
+                ['Feb', 2163],
+                ['Mar', 200],
+                ['Apr', 380],
+                ['May', 800],
+                ['Jun', 660],
+                ['Jul', 500],
+                ['Aug', 1500],
+                ['Sep', 1700],
+                ['Oct', 1200],
+                ['Nov', 600],
+                ['Dec', 450],
+            ]);
+
+            var options = {
+                legend: { position: 'none' },
+                fontName: 'GilroyMedium',
+                fontSize: '18',
+                titleTextStyle: {
+                    fontName: 'GilroyBold',
+                    fontSize: '24',
+                },
+                bar: { groupWidth: "30%"},
+            };
+            var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+            // Convert the Classic options to Material options.
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        };
+    </script>
+</head>
+
+<body>
+    <div class="wrap-header">
+        <header>
+            <form id="demo-2">
+                <input type="search" placeholder="Search">
+                <a href="signin.html" class="logotype">System Carnival</a>
+            </form>
+            <nav class="nav-collapse">
+                <ul>
+                    <li class="menu-item"><a href="index.html">Projects</a></li>
+                    <li class="menu-item"><a href="#">About</a></li>
+                    <li class="menu-item pr0"><a href="#">Log In</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="content">
+        <!-- <div id="top_x_div" style="width: 100%; height: 300px;"></div> -->
+        <div class="top-section">
+            <div class="profile-image"></div>
+            <div class="profile-info">
+
+                <div class="ab-pr">
+                    <div class="prof-name">
+                        <p class="maintxt">Pavlo Sydorchuck</p>
+                        <p class="lighttxt">Help-seeker</p>
+                    </div>
+                    <div class="total">
+                        <p class="maintxt">Total donated</p>
+                        <p class="lighttxt">$ 6750.36</p>
+                    </div>
+                </div>
+                <div class="date-donate">
+                    <div class="today">
+                        <p class="lighttxt">Today</p>
+                        <p class="maintxt mb0">+ $ 250.15</p>
+                    </div>
+                    <div class="week">
+                        <p class="lighttxt">This week</p>
+                        <p class="maintxt mb0">+ $ 310.06</p>
+                    </div>
+                    <div class="month">
+                        <p class="lighttxt">This month</p>
+                        <p class="maintxt mb0">+ $ 1026.44</p>
+                    </div>
+                </div>
+            </div>
+            <div class="discrbutton">
+                <a href="">
+                    <div class="button-create">
+                        Сreate a request
+                      </div>
+                </a>
+                <p class="mbo">Officia incididunt ullamco Lorem qui do esse commodo eiusmod duis dolor. Veniam consequat incididunt Lorem excepteur enim cupidatat velit magna 
+                    (опис який задає собі користувач).</p>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="prwraprecent">
+                <div class="prrecent">
+                    <div class="calls pad">Calls for help</div>
+                    <div class="person aic pad">
+                        <div class="left">
+                            <div class="name prof"><a href="">Fundraising for dog treatment</a></div>
+                        </div>
+                        <div class="summ">a week ago</div>
+                    </div>
+                    <div class="person aic pad">
+                        <div class="left">
+                            <div class="name prof"><a href="">Coronavirus. Riprendiamo fiato!</a></div>
+                        </div>
+                        <div class="summ">2 months ago</div>
+                    </div>
+                    <div class="person aic pad">
+                        <div class="left">
+                            <div class="name prof"><a href="">Aiutiamo la terapia intensiva Sant...</a></div>
+                        </div>
+                        <div class="summ">a year ago</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="activity">
+                <div class="calls">Activity</div>
+                <div id="top_x_div"></div>
+            </div>
+            
+        </div>
+        <footer>
+            <div class="links">
+                <div class="block1">
+                    <div class="row hr"><a href="#">Legal</a></div>
+                    <div class="row"><a href="#">Terms of Service</a></div>
+                    <div class="row"><a href="#">Privacy Policy</a></div>
+                    <div class="row"><a href="#">Cookie Information</a></div>
+                    <div class="row"><a href="#">GDPR Commitment</a></div>
+                </div>
+                <div class="block2">
+                    <div class="row hr"><a href="#">Company</a></div>
+                    <div class="row"><a href="#">Blog</a></div>
+                    <div class="row"><a href="#">Career</a></div>
+                    <div class="row"><a href="#">Privacy</a></div>
+                    <div class="row"><a href="#">About</a></div>
+                </div>
+            </div>
+            <div class="block3">
+                <p class="hr">System Carnival</p>
+                Copyright © 2020 . Designed by Ivan Kagitin
+                All rights reserved.
+            </div>
+        </footer>
+    </div>
+    <script src="../static/js/fastclick.js"></script>
+    <script src="../static/js/scroll.js"></script>
+    <script src="../static/js/fixed-responsive-nav.js"></script>
+</body>
+
+</html>

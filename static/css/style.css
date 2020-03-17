@@ -518,3 +518,218 @@ input[type=email],input[type=password],input[type=text]{
   input:focus ~ .logotype, .logotype:focus {
     z-index: -1;
   }
+
+  #name, #surname{
+    width: -moz-available;
+  }
+
+  .choice{
+      padding: 10px 0 24px 0;
+      display: flex;
+      justify-content: center;
+  }
+  .choice label{
+      width: 100%;
+  }
+  .choice label input{
+    display: none;
+  }
+  .radioch{
+      width: 100%;
+      background-color:  #F8F8F8;
+      padding: 11px 0;
+      font-family: 'GilroyMedium';
+      font-size: 18px;
+      color: #73738D;
+      cursor: pointer;
+  }
+  .phil>.radioch{
+    border-radius:29.8014px 0 0 29.8014px ;
+  }
+  .help>.radioch{
+    border-radius: 0 29.8014px 29.8014px 0;
+  }
+
+
+  input[type="radio"]:checked + .label {
+    background-color: #C0C0C0;
+  }
+  input[type="radio"]{
+      display: none;
+  }
+  .label{
+    display: inline-block;
+    width: 50%;
+    background-color:  #F8F8F8;
+    padding: 11px 0;
+    font-family: 'GilroyMedium';
+    font-size: 18px;
+    color: #73738D;
+    cursor: pointer;
+    margin: 15px 0;
+}
+.left-l{
+    float: left;
+    border-radius:29.8014px 0 0 29.8014px ;
+}
+.right-l{
+    border-radius: 0 29.8014px 29.8014px 0;
+}
+
+
+
+
+.profile-image{
+    width: 168px;
+    height: 168px;
+    background-image: url(../img/Ellipse1.png);
+    background-position: center;
+    background-size: cover;
+}
+.profile-info{
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+} 
+.ab-pr, .date-donate{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.top-section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.discrbutton{
+    max-width: 22%;
+}
+.bottom-section{
+    display: flex;
+    width: 100%;  
+    justify-content: space-between;  
+    padding: 75px 0 50px 0;
+}
+#top_x_div{
+    padding: 15px 25px;
+    
+    border-radius: 12px;
+}
+.activity{
+    width: 50%;
+    height: fit-content;
+    border-radius: 12px;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
+}
+#top_x_div text {
+    fill: #000;
+}
+.prof{
+    padding-left: 0;
+}
+.pad{
+    padding: 22px 25px;
+    width: 100%;
+}
+.prwraprecent{
+    margin: 0;
+    width: 45%;
+    padding-right: 5%;
+    height: fit-content;
+    min-height: 303px;
+}
+.prrecent{
+    border-radius: 12px;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.calls{
+    font-family: "GilroyBold";
+    font-size: 24px;
+    text-align: center;
+    padding: 22px 25px;
+}
+.maintxt{
+    font-size: 24px;
+    font-family: "GilroySemiBold";
+    margin-top: 0;
+}
+.lighttxt{
+    font-size: 18px;
+    font-family: "GilroyMedium";
+    color: #222222;
+}
+.mt0{
+    margin-top: 0;
+}
+.mb0{
+    margin-bottom: 0;
+}
+.button-create{
+    font-family: "GilroySemiBold";
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background: #1943EF;
+    border-radius: 33.96px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
+    padding: 10px 0;
+    margin: 11px 0 40px 0;
+}
+@media screen and (max-width: 59em) {
+    .top-section, .bottom-section{
+        flex-wrap: wrap;
+    }
+    .bottom-section{
+        padding-top: 20px;
+    }
+    .top-section{
+        padding: 0 7px;
+    }
+    .profile-info, .discrbutton, .prwraprecent, .activity{
+        width: 100%;
+    }
+    .discrbutton{
+        max-width: 100%;
+    }
+    .prwraprecent{
+        padding:0 0 30px 0
+    }
+    .profile-image{
+        margin: auto;
+    }
+    .ab-pr, .date-donate{
+        flex-wrap: wrap;
+
+    }
+    .prof-name, .total{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .maintxt{
+        margin-top: 24px;
+    }
+    .today, .week, .month{
+        width: 50%;
+    }
+    .button-create{
+        margin: 35px 0;
+    }
+    .prrecent{
+        height: auto;
+    }
+    .pad {
+        padding: 22px 8px;
+    }
+}

@@ -732,4 +732,8 @@ input[type=email],input[type=password],input[type=text]{
     .pad {
         padding: 22px 8px;
     }
+	.profile-image{
+        width: 200px;
+        height: 200PX;
+    }
 }

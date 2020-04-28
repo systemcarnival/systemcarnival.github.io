@@ -350,6 +350,277 @@ footer{
 
 
 
+  /* Home page */
+
+
+.img-wrapper-home{
+    background-image: url(..//img/african_kids.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 30%;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 10.77px 27.72px rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+}
+
+.donate-button-home{
+    font-family: "GilroySemiBold"; 
+    text-align: center;
+    background: rgb(236, 238, 239);
+    border-radius: 33.96px;
+    font-size: 20px;
+    line-height: 54px;
+    color: #383850;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.15), 0px 5.77px 27.72px rgba(0, 0, 0, 0.15);
+    padding: 5px 0 ;
+}
+.donate-button-wrap-home{
+    padding: 28% 40% 5% 40%;
+    margin: 0;
+    width: 20%;
+}
+.main-text-home{
+    color: #FFFFFF;
+    font-family: "GilroyBold";
+    font-size: 120px;
+    text-align: center;
+    padding-top: 15%;
+    margin: 0;
+}
+.header-text-home{
+    color: black;
+    font-family: "GilroyBold";
+    font-size: 70px;
+    text-align: center;
+    padding-top: 150px;
+    margin: 0;
+}
+.category-wrapper-home{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto  auto  auto;
+}
+.category-button-wrapper-home{
+    margin: 50px;
+    justify-self: stretch;
+}
+.disaster-button-home{
+    font-family: "GilroySemiBold"; 
+    text-align: center;
+    background-image: url(..//img/disasters_blured.jpg);
+    background-position: 50% 65%;
+    background-size: 130%;
+    border-radius: 33.96px;
+    font-size: 28px;
+    line-height: 64px;
+    color: #383850;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.15), 0px 5.77px 27.72px rgba(0, 0, 0, 0.15);
+    padding: 5px 0 ;
+}
+.education-button-home{
+    font-family: "GilroySemiBold"; 
+    text-align: center;
+    background-image: url(..//img/education_blured.jpg);
+    background-position: 70% 50%;
+    background-size: 130%;
+    border-radius: 33.96px;
+    font-size: 28px;
+    line-height: 64px;
+    color: #383850;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.15), 0px 5.77px 27.72px rgba(0, 0, 0, 0.15);
+    padding: 5px 0 ;
+}
+.hunger-button-home{
+    font-family: "GilroySemiBold"; 
+    text-align: center;
+    background-image: url(..//img/hunger_blured.jpg);
+    background-position: 50% 90%;
+    background-size: 100%;
+    border-radius: 33.96px;
+    font-size: 28px;
+    line-height: 64px;
+    color: #383850;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.15), 0px 5.77px 27.72px rgba(0, 0, 0, 0.15);
+    padding: 5px 0 ;
+}
+.environment-button-home{
+    font-family: "GilroySemiBold"; 
+    text-align: center;
+    background-image: url(..//img/environment_blured.jpg);
+    background-position: 50% 60%;
+    background-size: 110%;
+    border-radius: 33.96px;
+    font-size: 28px;
+    line-height: 64px;
+    color: #383850;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.15), 0px 5.77px 27.72px rgba(0, 0, 0, 0.15);
+    padding: 5px 0 ;
+}
+.health-button-home{
+    font-family: "GilroySemiBold"; 
+    text-align: center;
+    background-image: url(..//img/health_blured.jpg);
+    background-position: 50% 50%;
+    background-size: 100%;
+    border-radius: 33.96px;
+    font-size: 28px;
+    line-height: 64px;
+    color: #383850;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.15), 0px 5.77px 27.72px rgba(0, 0, 0, 0.15);
+    padding: 5px 0 ;
+}
+
+
+
+.home-card{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    transition: 0.5s ease;
+    cursor: pointer;
+    width: fit-content;
+    
+
+    font-family: "GilroyRegular";
+    text-align: center;
+    border-radius: 33.96px;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.15), 0px 5.77px 27.72px rgba(0, 0, 0, 0.15);
+}
+.home-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10em;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    justify-content: center;
+    background-color: white;
+}
+.home-card-image{
+    grid-area: image;
+    background-image: url(../img/charity-events.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.home-card-text{
+    grid-area: text;
+    margin: 25px;
+}
+.home-card-text p{
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+.home-card-text h2{
+    margin-top: 0px;
+    font-size: 28px;
+}
+.home-card-stats{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(165, 209, 199);
+}
+.home-card-stats .home-card-stat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+
+}
+.home-card-stats .home-card-type{
+    font-size: 11px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.home-card-stats .home-card-value{
+    font-size: 22px;
+    font-weight: 400;
+}
+.home-card-stats .border{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.home-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.12), 0px 5.77px 27.72px rgba(0, 0, 0, 0.12);;
+}
+.topic-home{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: "GilroyMedium"; 
+    font-size: 14px;
+    color: #454554;
+    padding-top: 13px;
+    text-decoration: underline;
+    padding-left: 12%;
+}
+.mtb{
+    margin: 30px auto;
+}
+.all{
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 0;
+}
+.mt0{
+    margin-top: 0;
+}
+.maintxt{
+    font-family: "GilroyBold";
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+.home-card-image-req{
+    grid-area: image;
+    background-image: url(../img/JS_20140422_7747-31.jpg);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-size: cover;
+    height: 150px;
+    width: 250px;
+}
+.req-block{
+    width: 100%;
+}
+.request{
+    width: 100%;
+}
+@media(max-width: 960.98px){
+    .all .home-card{
+        width: 85%;
+        margin: auto;
+        grid-template-columns:none;
+        margin-bottom: 5em;
+    }
+    .all{
+        display: block;
+        margin: 0;
+}
+.home-card-wrapper{
+    padding-bottom: 0;
+}
+.topic-home{
+    padding-left: 0;
+    justify-content: center;
+}
+
+    }
+    
+
+
 /* Demo 2 */
 #demo-2{
     display: inline-block;
@@ -518,222 +789,3 @@ input[type=email],input[type=password],input[type=text]{
   input:focus ~ .logotype, .logotype:focus {
     z-index: -1;
   }
-
-  #name, #surname{
-    width: -moz-available;
-  }
-
-  .choice{
-      padding: 10px 0 24px 0;
-      display: flex;
-      justify-content: center;
-  }
-  .choice label{
-      width: 100%;
-  }
-  .choice label input{
-    display: none;
-  }
-  .radioch{
-      width: 100%;
-      background-color:  #F8F8F8;
-      padding: 11px 0;
-      font-family: 'GilroyMedium';
-      font-size: 18px;
-      color: #73738D;
-      cursor: pointer;
-  }
-  .phil>.radioch{
-    border-radius:29.8014px 0 0 29.8014px ;
-  }
-  .help>.radioch{
-    border-radius: 0 29.8014px 29.8014px 0;
-  }
-
-
-  input[type="radio"]:checked + .label {
-    background-color: #C0C0C0;
-  }
-  input[type="radio"]{
-      display: none;
-  }
-  .label{
-    display: inline-block;
-    width: 50%;
-    background-color:  #F8F8F8;
-    padding: 11px 0;
-    font-family: 'GilroyMedium';
-    font-size: 18px;
-    color: #73738D;
-    cursor: pointer;
-    margin: 15px 0;
-}
-.left-l{
-    float: left;
-    border-radius:29.8014px 0 0 29.8014px ;
-}
-.right-l{
-    border-radius: 0 29.8014px 29.8014px 0;
-}
-
-
-
-
-.profile-image{
-    width: 168px;
-    height: 168px;
-    background-image: url(../img/Ellipse1.png);
-    background-position: center;
-    background-size: cover;
-}
-.profile-info{
-    width: 55%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-} 
-.ab-pr, .date-donate{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-.top-section{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-top: 15px;
-}
-.discrbutton{
-    max-width: 22%;
-}
-.bottom-section{
-    display: flex;
-    width: 100%;  
-    justify-content: space-between;  
-    padding: 75px 0 50px 0;
-}
-#top_x_div{
-    padding: 15px 25px;
-    
-    border-radius: 12px;
-}
-.activity{
-    width: 50%;
-    height: fit-content;
-    border-radius: 12px;
-    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
-}
-#top_x_div text {
-    fill: #000;
-}
-.prof{
-    padding-left: 0;
-}
-.pad{
-    padding: 22px 25px;
-    width: 100%;
-}
-.prwraprecent{
-    margin: 0;
-    width: 45%;
-    padding-right: 5%;
-    height: fit-content;
-    min-height: 303px;
-}
-.prrecent{
-    border-radius: 12px;
-    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
-    text-align: center;
-    height: -webkit-fill-available;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-}
-.calls{
-    font-family: "GilroyBold";
-    font-size: 24px;
-    text-align: center;
-    padding: 22px 25px;
-}
-.maintxt{
-    font-size: 24px;
-    font-family: "GilroySemiBold";
-    margin-top: 0;
-}
-.lighttxt{
-    font-size: 18px;
-    font-family: "GilroyMedium";
-    color: #222222;
-}
-.mt0{
-    margin-top: 0;
-}
-.mb0{
-    margin-bottom: 0;
-}
-.button-create{
-    font-family: "GilroySemiBold";
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    background: #1943EF;
-    border-radius: 33.96px;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FFFFFF;
-    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
-    padding: 10px 0;
-    margin: 11px 0 40px 0;
-}
-@media screen and (max-width: 59em) {
-    .top-section, .bottom-section{
-        flex-wrap: wrap;
-    }
-    .bottom-section{
-        padding-top: 20px;
-    }
-    .top-section{
-        padding: 0 7px;
-    }
-    .profile-info, .discrbutton, .prwraprecent, .activity{
-        width: 100%;
-    }
-    .discrbutton{
-        max-width: 100%;
-    }
-    .prwraprecent{
-        padding:0 0 30px 0
-    }
-    .profile-image{
-        margin: auto;
-    }
-    .ab-pr, .date-donate{
-        flex-wrap: wrap;
-
-    }
-    .prof-name, .total{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-    }
-    .maintxt{
-        margin-top: 24px;
-    }
-    .today, .week, .month{
-        width: 50%;
-    }
-    .button-create{
-        margin: 35px 0;
-    }
-    .prrecent{
-        height: auto;
-    }
-    .pad {
-        padding: 22px 8px;
-    }
-	.profile-image{
-        width: 200px;
-        height: 200PX;
-    }
-}

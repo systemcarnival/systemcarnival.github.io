@@ -608,16 +608,15 @@ footer{
     .all{
         display: block;
         margin: 0;
-}
-.home-card-wrapper{
-    padding-bottom: 0;
-}
-.topic-home{
-    padding-left: 0;
-    justify-content: center;
-}
-
     }
+    .home-card-wrapper{
+        padding-bottom: 0;
+    }
+    .topic-home{
+        padding-left: 0;
+        justify-content: center;
+    }
+}
     
 
 
@@ -789,3 +788,5 @@ input[type=email],input[type=password],input[type=text]{
   input:focus ~ .logotype, .logotype:focus {
     z-index: -1;
   }
+
+  

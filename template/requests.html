@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <script src="../static/js/responsive-nav.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+    <div class="wrap-header">
+        <header>
+            <form id="demo-2">
+                <input type="search" placeholder="Search">
+                <a href="home.html" class="logotype">Charitable</a>
+            </form>
+
+            <nav class="nav-collapse">
+                <ul>
+                    <li class="menu-item"><a href="profile.html">Profile</a></li>
+                    <li class="menu-item"><a href="requests.html">Projects</a></li>
+                    <li class="menu-item pr0"><a href="signin.html">Log In</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="content req">
+        <p class="maintxt helpr">All help requests</p>
+        <div class="myBtnContainer">
+            <button class="btn active""> Recent</button>
+            <button class="btn""> Most Popular</button>
+            <button class="btn""> Almost collected</button>
+        </div>
+        <div class="filters">
+            <p class="filt">Filters</p>
+            <form action="">
+                <input type="search" placeholder="Enter your request" class="innersearch">
+                
+                <div class="demo">
+                    <p>
+                        <label for="percent">The amount needed:</label>
+                        <input type="text" id="percent" class="numbers" />
+                    </p>
+                    <div id="slider-range2"></div>
+                </div>
+                <div class="demo">
+                    <p>
+                        <label for="amount">Percent collected: </label>
+                        <input type="text" id="amount" class="numbers" />
+                    </p>
+                    <div id="slider-range"></div>
+                </div>
+                <select name="" id="">
+                    <option value="">All categories</option>
+                    <option value="">Disaster</option>
+                    <option value="">Education</option>
+                    <option value="">Hunger</option>
+                    <option value="">Environment</option>
+                    <option value="">Health</option>
+                    <option value="">Animals</option>
+                </select>
+                <select name="" id="" class="bottom-select">
+                    <option value="">Ukraine</option>
+                    <option value="">Disaster</option>
+                    <option value="">Education</option>
+                    <option value="">Hunger</option>
+                    <option value="">Environment</option>
+                    <option value="">Health</option>
+                    <option value="">Animals</option>
+                </select>
+                
+            </form>
+        </div>
+        <div class="requests" id="requests">
+            <a href="project.html">
+                <div class="request-block" data-price="3400" data-percents="90">
+                    <div class="r-img"></div>
+                    <div class="rbcontent">
+                        <div class="headerblock">
+                            <div class="tog">
+                                <p class="rbheader">Consectetur adipisicing</p>
+                                <div class="topic2">
+                                    <img src="../static/img/Pinned(E840).svg" alt="">
+                                    Education
+                                </div>
+                            </div>
+                            <p class="raisedof">Raised <span>$3196 of $3400</span></p>
+                        </div>
+                        <div class="rb-desc">Excepteur sunt eiusmod pariatur nulla consectetur adipisicing laborum
+                            voluptate
+                            commodo officia id. Nostrud amet ullamco</div>
+                        <div class="percentleft">
+                            <div class="prcnt">90%</div>
+                            <div class="leftto">$245 left</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="project.html">
+                <div class="request-block" data-price="5810" data-percents="73">
+                    <div class="r-img scnd"></div>
+                    <div class="rbcontent">
+                        <div class="headerblock">
+                            <div class="tog">
+                                <p class="rbheader">Minim et tempor</p>
+                                <div class="topic2">
+                                    <img src="../static/img/Pinned(E840).svg" alt="">
+                                    Hunger
+                                </div>
+                            </div>
+                            <p class="raisedof">Raised <span>$4500 of $5810</span></p>
+                        </div>
+                        <div class="rb-desc">Excepteur sunt eiusmod pariatur nulla consectetur adipisicing laborum
+                            voluptate
+                            commodo officia id. Nostrud amet ullamco</div>
+                        <div class="percentleft">
+                            <div class="prcnt">73%</div>
+                            <div class="leftto">$591 left</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="project.html">
+                <div class="request-block" data-price="1500" data-percents="84">
+                    <div class="r-img thrd"></div>
+                    <div class="rbcontent">
+                        <div class="headerblock">
+                            <div class="tog">
+                                <p class="rbheader">Ex exercitation</p>
+                                <div class="topic2">
+                                    <img src="../static/img/Pinned(E840).svg" alt="">
+                                    Health
+                                </div>
+                            </div>
+                            <p class="raisedof">Raised <span>$1036 of $1500</span></p>
+                        </div>
+                        <div class="rb-desc">Excepteur sunt eiusmod pariatur nulla consectetur adipisicing laborum
+                            voluptate
+                            commodo officia id. Nostrud amet ullamco</div>
+                        <div class="percentleft">
+                            <div class="prcnt">84%</div>
+                            <div class="leftto">$133 left</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="project.html">
+                <div class="request-block" data-price="3400" data-percents="90">
+                    <div class="r-img"></div>
+                    <div class="rbcontent">
+                        <div class="headerblock">
+                            <div class="tog">
+                                <p class="rbheader">Consectetur adipisicing</p>
+                                <div class="topic2">
+                                    <img src="../static/img/Pinned(E840).svg" alt="">
+                                    Education
+                                </div>
+                            </div>
+                            <p class="raisedof">Raised <span>$3196 of $3400</span></p>
+                        </div>
+                        <div class="rb-desc">Excepteur sunt eiusmod pariatur nulla consectetur adipisicing laborum
+                            voluptate
+                            commodo officia id. Nostrud amet ullamco</div>
+                        <div class="percentleft">
+                            <div class="prcnt">90%</div>
+                            <div class="leftto">$245 left</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="project.html">
+                <div class="request-block" data-price="5810" data-percents="73">
+                    <div class="r-img scnd"></div>
+                    <div class="rbcontent">
+                        <div class="headerblock">
+                            <div class="tog">
+                                <p class="rbheader">Minim et tempor</p>
+                                <div class="topic2">
+                                    <img src="../static/img/Pinned(E840).svg" alt="">
+                                    Hunger
+                                </div>
+                            </div>
+                            <p class="raisedof">Raised <span>$4500 of $5810</span></p>
+                        </div>
+                        <div class="rb-desc">Excepteur sunt eiusmod pariatur nulla consectetur adipisicing laborum
+                            voluptate
+                            commodo officia id. Nostrud amet ullamco</div>
+                        <div class="percentleft">
+                            <div class="prcnt">73%</div>
+                            <div class="leftto">$591 left</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="project.html">
+                <div class="request-block" data-price="1500" data-percents="84">
+                    <div class="r-img thrd"></div>
+                    <div class="rbcontent">
+                        <div class="headerblock">
+                            <div class="tog">
+                                <p class="rbheader">Ex exercitation</p>
+                                <div class="topic2">
+                                    <img src="../static/img/Pinned(E840).svg" alt="">
+                                    Health
+                                </div>
+                            </div>
+                            <p class="raisedof">Raised <span>$1036 of $1500</span></p>
+                        </div>
+                        <div class="rb-desc">Excepteur sunt eiusmod pariatur nulla consectetur adipisicing laborum
+                            voluptate
+                            commodo officia id. Nostrud amet ullamco</div>
+                        <div class="percentleft">
+                            <div class="prcnt">84%</div>
+                            <div class="leftto">$133 left</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <footer>
+            <div class="links">
+                <div class="block1">
+                    <div class="row hr"><a href="#">Legal</a></div>
+                    <div class="row"><a href="#">Terms of Service</a></div>
+                    <div class="row"><a href="#">Privacy Policy</a></div>
+                    <div class="row"><a href="#">Cookie Information</a></div>
+                    <div class="row"><a href="#">GDPR Commitment</a></div>
+                </div>
+                <div class="block2">
+                    <div class="row hr"><a href="#">Company</a></div>
+                    <div class="row"><a href="#">Blog</a></div>
+                    <div class="row"><a href="#">Career</a></div>
+                    <div class="row"><a href="#">Privacy</a></div>
+                    <div class="row"><a href="#">About</a></div>
+                </div>
+            </div>
+            <div class="block3">
+                <p class="hr">System Carnival</p>
+                Copyright © 2020 . Designed by Ivan Kagitin
+                All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script src="../static/js/fastclick.js"></script>
+    <script src="../static/js/scroll.js"></script>
+    <script src="../static/js/fixed-responsive-nav.js"></script>
+    <script src="../static/js/slider.js"></script>
+</body>
+
+</html>

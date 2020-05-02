@@ -6,14 +6,13 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../static/css/style.css">
-
-    <link rel="stylesheet" href="../static/css/styles.css">
     <script src="../static/js/responsive-nav.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    
+
 </head>
 
 <body>
@@ -42,47 +41,47 @@
             <button class="btn">Almost collected</button>
         </div>
         <div class=" filters">
-                <div class="reqrow">
-                    <p class="filt">Filters</p>
-                    <img src="/static/img/imgfilter.svg" alt="" class="open">
+            <div class="reqrow">
+                <p class="filt">Filters</p>
+                <img src="/static/img/imgfilter.svg" alt="" class="open">
+            </div>
+            <form action="" class="hide">
+                <input type="search" placeholder="Enter your request" class="innersearch">
+
+                <div class="demo">
+                    <p>
+                        <label for="percent">The amount needed:</label>
+                        <input type="text" id="percent" class="numbers" />
+                    </p>
+                    <div id="slider-range2"></div>
                 </div>
-                <form action="" class="hide">
-                    <input type="search" placeholder="Enter your request" class="innersearch">
+                <div class="demo">
+                    <p>
+                        <label for="amount">Percent collected: </label>
+                        <input type="text" id="amount" class="numbers" />
+                    </p>
+                    <div id="slider-range"></div>
+                </div>
+                <select name="" id="">
+                    <option value="">All categories</option>
+                    <option value="">Disaster</option>
+                    <option value="">Education</option>
+                    <option value="">Hunger</option>
+                    <option value="">Environment</option>
+                    <option value="">Health</option>
+                    <option value="">Animals</option>
+                </select>
+                <select name="" id="" class="bottom-select">
+                    <option value="">Ukraine</option>
+                    <option value="">Disaster</option>
+                    <option value="">Education</option>
+                    <option value="">Hunger</option>
+                    <option value="">Environment</option>
+                    <option value="">Health</option>
+                    <option value="">Animals</option>
+                </select>
 
-                    <div class="demo">
-                        <p>
-                            <label for="percent">The amount needed:</label>
-                            <input type="text" id="percent" class="numbers" />
-                        </p>
-                        <div id="slider-range2"></div>
-                    </div>
-                    <div class="demo">
-                        <p>
-                            <label for="amount">Percent collected: </label>
-                            <input type="text" id="amount" class="numbers" />
-                        </p>
-                        <div id="slider-range"></div>
-                    </div>
-                    <select name="" id="">
-                        <option value="">All categories</option>
-                        <option value="">Disaster</option>
-                        <option value="">Education</option>
-                        <option value="">Hunger</option>
-                        <option value="">Environment</option>
-                        <option value="">Health</option>
-                        <option value="">Animals</option>
-                    </select>
-                    <select name="" id="" class="bottom-select">
-                        <option value="">Ukraine</option>
-                        <option value="">Disaster</option>
-                        <option value="">Education</option>
-                        <option value="">Hunger</option>
-                        <option value="">Environment</option>
-                        <option value="">Health</option>
-                        <option value="">Animals</option>
-                    </select>
-
-                </form>
+            </form>
         </div>
         <div class="requests" id="requests">
             <a href="project.html">

@@ -701,6 +701,8 @@ select{
 @media(max-width: 960.98px){
   .hide{
       display: none;
+      background: #ffffff;
+      margin-top: -3px;
   }
   .reqrow{
     width: 99%;

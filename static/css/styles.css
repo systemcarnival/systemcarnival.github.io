@@ -683,7 +683,7 @@ select{
 .filt {
   font-size: 20px;
   font-family: "GilroySemiBold";
-  margin-top: 0;
+  margin: 0;
   text-align: left;
 }
 .innersearch{
@@ -691,14 +691,30 @@ select{
   padding-left: 40px!important;
   font-size: 15px!important;
 }
+.reqrow{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 80%;
+  margin-bottom: 20px;
+}
 @media(max-width: 960.98px){
-  .filters{
+  .hide{
       display: none;
   }
-  .requests{
-      width: 80%!important;
+  .reqrow{
+    width: 100%;
+  }
+  .demo, .innersearch, select{
+    width: 100%!important;
+  }
+  .requests, .filters{
+      width: 85%!important;
       margin: 40px auto;
       margin-top: 0px;
+  }
+  .filters{
+    margin-bottom: 0;
   }
   .request-block, .rbcontent{
       flex-wrap: wrap;
@@ -734,21 +750,28 @@ select{
     line-height: 33px;
   }
   .prcnt{
-    margin-left: 0;
+    margin-left: 10px;
   }
   .btn{
     padding: 10px 20px; 
-    margin: 5px 10px;
+    margin: 5px 0;
   }
   .myBtnContainer{
     width: 85%;
     margin: auto;
     text-align: left;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
   }
   .helpr{
     text-align: center;
   }
   .req{
     padding-top: 50px;
+  }
+  .r-img{
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 15px;
   }
 }

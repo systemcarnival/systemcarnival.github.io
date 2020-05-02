@@ -60,3 +60,9 @@ $(function() {
 
     showProducts2(min, max);
 });
+
+$(document).ready(function(){
+    $(".reqrow").click(function(){
+      $(".hide").animate({height:'toggle',marginBottom:'0'},300);
+    });
+  });

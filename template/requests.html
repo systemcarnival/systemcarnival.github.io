@@ -35,49 +35,52 @@
     <div class="content req">
         <p class="maintxt helpr">All help requests</p>
         <div class="myBtnContainer">
-            <button class="btn active""> Recent</button>
-            <button class="btn""> Most Popular</button>
-            <button class="btn""> Almost collected</button>
+            <button class="btn active">Recent</button>
+            <button class=" btn">Most Popular</button>
+            <button class="btn">Almost collected</button>
         </div>
-        <div class="filters">
-            <p class="filt">Filters</p>
-            <form action="">
-                <input type="search" placeholder="Enter your request" class="innersearch">
-                
-                <div class="demo">
-                    <p>
-                        <label for="percent">The amount needed:</label>
-                        <input type="text" id="percent" class="numbers" />
-                    </p>
-                    <div id="slider-range2"></div>
+        <div class=" filters">
+                <div class="reqrow">
+                    <p class="filt">Filters</p>
+                    <img src="/static/img/imgfilter.svg" alt="" class="open">
                 </div>
-                <div class="demo">
-                    <p>
-                        <label for="amount">Percent collected: </label>
-                        <input type="text" id="amount" class="numbers" />
-                    </p>
-                    <div id="slider-range"></div>
-                </div>
-                <select name="" id="">
-                    <option value="">All categories</option>
-                    <option value="">Disaster</option>
-                    <option value="">Education</option>
-                    <option value="">Hunger</option>
-                    <option value="">Environment</option>
-                    <option value="">Health</option>
-                    <option value="">Animals</option>
-                </select>
-                <select name="" id="" class="bottom-select">
-                    <option value="">Ukraine</option>
-                    <option value="">Disaster</option>
-                    <option value="">Education</option>
-                    <option value="">Hunger</option>
-                    <option value="">Environment</option>
-                    <option value="">Health</option>
-                    <option value="">Animals</option>
-                </select>
-                
-            </form>
+                <form action="" class="hide">
+                    <input type="search" placeholder="Enter your request" class="innersearch">
+
+                    <div class="demo">
+                        <p>
+                            <label for="percent">The amount needed:</label>
+                            <input type="text" id="percent" class="numbers" />
+                        </p>
+                        <div id="slider-range2"></div>
+                    </div>
+                    <div class="demo">
+                        <p>
+                            <label for="amount">Percent collected: </label>
+                            <input type="text" id="amount" class="numbers" />
+                        </p>
+                        <div id="slider-range"></div>
+                    </div>
+                    <select name="" id="">
+                        <option value="">All categories</option>
+                        <option value="">Disaster</option>
+                        <option value="">Education</option>
+                        <option value="">Hunger</option>
+                        <option value="">Environment</option>
+                        <option value="">Health</option>
+                        <option value="">Animals</option>
+                    </select>
+                    <select name="" id="" class="bottom-select">
+                        <option value="">Ukraine</option>
+                        <option value="">Disaster</option>
+                        <option value="">Education</option>
+                        <option value="">Hunger</option>
+                        <option value="">Environment</option>
+                        <option value="">Health</option>
+                        <option value="">Animals</option>
+                    </select>
+
+                </form>
         </div>
         <div class="requests" id="requests">
             <a href="project.html">

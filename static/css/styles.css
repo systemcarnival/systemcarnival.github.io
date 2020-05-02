@@ -776,4 +776,8 @@ select{
     border-bottom-left-radius: unset;
     border-top-right-radius: 15px;
   }
+  select{
+    color: #000000;
+    -webkit-appearance: none;
+  }
 }

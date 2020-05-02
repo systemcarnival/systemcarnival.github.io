@@ -778,5 +778,9 @@ select{
   }
   select{
     -webkit-appearance: none;
+    background: url(/static/img/arrowdown.svg) 95% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: #fff !important;
+    color: #000000;
   }
 }

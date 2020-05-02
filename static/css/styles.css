@@ -734,7 +734,7 @@ select{
     line-height: 33px;
   }
   .prcnt{
-    margin-left: 13%;
+    margin-left: 0;
   }
   .btn{
     padding: 10px 20px; 

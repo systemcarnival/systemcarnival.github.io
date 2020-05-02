@@ -704,7 +704,9 @@ select{
   }
   .reqrow{
     width: 99%;
-    margin: auto;
+    margin: 0 auto;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 20px;
   }
   .demo, .innersearch, select{
     width: 100%!important;

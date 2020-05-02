@@ -703,7 +703,8 @@ select{
       display: none;
   }
   .reqrow{
-    width: 100%;
+    width: 99%;
+    margin: auto;
   }
   .demo, .innersearch, select{
     width: 100%!important;

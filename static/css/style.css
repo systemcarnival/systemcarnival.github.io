@@ -319,7 +319,7 @@ a{
     margin: 0;
 }
 footer{
-    padding: 0 20px;
+    padding: 10px 0;
     font-size: 14px;
     font-family: "GilroyMedium";
     color: #73738D;
@@ -705,8 +705,8 @@ footer{
 }
 .pr_name{
   width: 100%;
-  max-width: 350px;
   display: grid;
+  justify-content: center;
   
 }
 
@@ -754,7 +754,7 @@ width: 82%;
   resize: vertical;
 }
 .details:focus{
-box-shadow: 0;
+  box-shadow: 0;
   outline: none;
   resize: vertical;
 }
@@ -766,26 +766,7 @@ box-shadow: 0;
 
 }
 
-/* .select, select {
-  -ms-appearance: none;
-   appearance: none;
-  outline: 0;
-  background-image: none; 
-  font-family: 'GilroyMedium';
-  font-size: 18px;
-  background: #F4F4F4;
-border: solid 1px transparent;
--webkit-border-radius: 33.96px;
--moz-border-radius: 33.96px;
-  border-radius: 33.96px;
-  height: auto;
-} */
 
-/* Remove IE arrow */
-/* .select, select::-ms-expand {
-  display: none;
-} */
-/* Custom Select */
  .wrap_select{
   width: 100%;
   display: flex;
@@ -805,53 +786,6 @@ border: solid 1px transparent;
   padding: 0 10% 0 17%;
   text-align: center;
 }
-/*
-.select {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 16em;
-  height: 2.6em;
-  line-height: 3;
-  background: #F4F4F4;
-  overflow: hidden;
-  border-radius: 33.96px;
-  margin: 15px 0 0 0;
-  
-} */
-/* .select, select {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  padding: 0 .5em;
-  color: #73748b;
-  cursor: pointer;
-} */
-/* Arrow */
-/* .select::after {
-  content: '\25BC';
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0em 1em 0 0.9em;
-  background: #1943EF;
-  color: #fff;
-  cursor: pointer;
-  pointer-events: none;
-  
-} */
-
-
-
-
-
-      /* SEARCH COUNTRIES */
-
-
-
-
-
 
 
       /* SUM AMOUNT */

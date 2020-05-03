@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/dropzone.css">
     <link rel="stylesheet" href="../static/css/basic.css">
+    <link rel="stylesheet" href="../static/css/countrySelect.css">
 
     <link rel="stylesheet" href="../static/css/styles.css">
     <script src="../static/js/responsive-nav.js"></script>
@@ -76,7 +77,6 @@
                     <p class="h-text ">More info:</p>
                     
                     <div class="wrap_select">
-                      <!-- в дів нижче class="select" -->
                         <div class="categ_slct">
                             <select name="slct" id="slct">
                               <option selected disabled>Choose the category</option>
@@ -89,6 +89,11 @@
                             </select>
                         </div>
                     </div>
+
+
+
+                    <input type="text" id="country" />
+                    <input type="hidden" id="country_code" />
 
 
                     <p class="h3-text ">The amount of money <br> to be collected:</p>
@@ -158,6 +163,15 @@
     <script src="../static/js/dropzone.js"></script>
     <script src="../static/js/dropzone.js.map"></script>
     <script src="../static/js/search-countries.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../static/js/countrySelect.min.js"></script>
+    <script>
+        $("#country").countrySelect({
+            defaultCountry: "us",
+            preferredCountries: ['us', 'gb', 'ua'],
+            responsiveDropdown: true
+        });
+    </script>
 
 
 

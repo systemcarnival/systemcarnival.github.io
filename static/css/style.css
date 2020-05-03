@@ -1917,6 +1917,7 @@ input[type=email],input[type=password],input[type=text]{
   .donate-button-wrap-home{
       padding-top: 27em;
   }
+  
 }
 /* tablet */
 @media screen and (max-width: 768px) {
@@ -1927,12 +1928,24 @@ input[type=email],input[type=password],input[type=text]{
   .donate-button-wrap-home{
       padding-top: 27em;
   }
+  .maintxt{
+    font-size: 35px;
+    margin-top: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
 }
 /* mobile L */
 @media screen and (max-width: 425px) {
   .main-text-home{
       font-size: 70px;
       padding-top: 10%;
+  }
+  .maintxt{
+    font-size: 35px;
+    margin-top: 24px;
+    padding-bottom: 20px;
+    text-align: center;
   }
   .img-wrapper-home{
       height: 70vh;
@@ -1962,6 +1975,12 @@ input[type=email],input[type=password],input[type=text]{
   .main-text-home{
       font-size: 65px;
       padding-top: 15%;
+  }
+  .maintxt{
+    font-size: 35px;
+    margin-top: 24px;
+    padding-bottom: 20px;
+    text-align: center;
   }
   .donate-button-home{
       font-size: 20px;

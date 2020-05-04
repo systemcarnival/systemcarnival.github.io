@@ -944,6 +944,7 @@ input[type=email],input[type=password],input[type=text]{
 .inp {
     display: flex;
     width: 48%;
+    flex-wrap: wrap; 
 }
 .fordesktop{
     display: none;
@@ -1463,8 +1464,8 @@ input[type=email],input[type=password],input[type=text]{
         width: 100%;
         align-items: center;
     }
-    .maintxt{
-        margin-top: 24px;
+    .maintxt, .maintxtprof, .maintxtreq{
+        margin-top: 24px!important;
         text-align: inherit;
     }
     .today, .week, .month{
@@ -1926,4 +1927,25 @@ input[type=email],input[type=password],input[type=text]{
       grid-template-columns: 34% 32% 34%;
       padding-top: 12em;
   }
+}
+
+.error{
+  color: #ea4235;
+  font-family: "GilroySemiBold"; 
+  padding-left: 32px;
+  text-align: left;
+}
+
+.maintxtprof {
+  text-align: center;
+  font-size: 24px;
+  font-family: "GilroySemiBold";
+  margin-top: 0;
+}
+.maintxtreq {
+  font-size: 24px;
+  font-family: "GilroySemiBold";
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
 }

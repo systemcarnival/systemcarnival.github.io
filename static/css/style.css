@@ -610,6 +610,7 @@ footer{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
+  background-position: center;
 }
 .home-card-image2{
   grid-area: image;
@@ -617,6 +618,7 @@ footer{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
+  background-position: center;
 }
 .home-card-image3{
   grid-area: image;
@@ -624,6 +626,7 @@ footer{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   background-size: cover;
+  background-position: center;
 }
 .home-card-text{
   grid-area: text;
@@ -636,6 +639,7 @@ footer{
 }
 .home-card-text h2{
   margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 28px;
 }
 .home-card-stats{
@@ -645,7 +649,7 @@ footer{
   grid-template-rows: 1fr;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background: rgb(95, 142, 255);
+  background: #7692FF;
 }
 .home-card-stats .home-card-stat{
   display: flex;
@@ -675,14 +679,14 @@ footer{
 }
 .topic-home{
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   font-family: "GilroyMedium"; 
   font-size: 14px;
   color: #454554;
-  padding-top: 13px;
-  text-decoration: underline;
+  padding-top: 8px;
   padding-left: 12%;
+  padding-left: 0px;
 }
 
 
@@ -762,9 +766,7 @@ width: 82%;
 
       /* Dropdown Select */
 
-.categ_slct{
 
-}
 
 
  .wrap_select{
@@ -1827,7 +1829,7 @@ input[type=email],input[type=password],input[type=text]{
 @media screen and (max-width: 1920px) {
   .main-text-home{
       font-size: 120px;
-      padding-top: 8%;
+      padding-top: 0;
   }
   .donate-button-home{
       font-size: 20px;

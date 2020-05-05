@@ -1934,6 +1934,10 @@ input[type=email],input[type=password],input[type=text]{
   font-family: "GilroySemiBold"; 
   padding-left: 32px;
   text-align: left;
+  width: 100%;
+}
+.inp input{
+  height: fit-content;
 }
 
 .maintxtprof {
@@ -1948,4 +1952,24 @@ input[type=email],input[type=password],input[type=text]{
   margin-top: 0;
   width: 100%;
   text-align: center;
+}
+img.checkmark{
+  padding: 0 7px ;
+}
+span.checkmark:hover::after {
+  content: "Your account is verified";
+  font-size: 14px;
+  color: #454554;
+  position: relative; 
+  top: -2px;
+  left: 4px;
+}
+.warning{
+  color: #68686d;
+  font-family: "GilroyMedium"; 
+  padding-left: 32px;
+  text-align: left;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 10px;
 }

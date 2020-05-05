@@ -175,6 +175,7 @@
 }
 
   .dropzone {
+    margin: 0 10px;
     border: 2px dashed #7692FF;
     border-radius: 8px;
     background: white;
@@ -201,7 +202,7 @@
 
   .dropzone .dz-message {
     text-align: center;
-    margin: 2em 0;
+    margin: 4em 0;
      }
 
     .dropzone .dz-message .dz-button {

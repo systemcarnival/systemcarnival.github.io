@@ -643,7 +643,7 @@ footer{
   margin-bottom: 0px;
   font-size: 28px;
 }
-.stretched-link::after {
+.stretched-link{
   position: absolute;
   top: 0;
   right: 0;
@@ -652,6 +652,16 @@ footer{
   z-index: 1;
   pointer-events: auto;
   content: "";
+  background-color: rgba(0,0,0,0);
+}
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
   background-color: rgba(0,0,0,0);
 }
 .home-card-stats{
@@ -707,17 +717,26 @@ footer{
 
 
 /* ---------------------------------------- CREATE PROJECT ---------------------------------------------- */
-
+.content_crtpr{
+  padding: 10px 0;
+  padding-top: 85px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 10%;
+  max-width: 1120px;
+  justify-content: space-between;
+}
 .create_pr_wrap{
   padding: 10px 0;
 }
 .create_proj{
-  width: fit-content;
+  width: 80%;
   margin: auto;
   box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 4.77px 27.72px rgba(0, 0, 0, 0.15);
   border-radius: 12px;
   text-align: center;
-  padding: 12px 40px;
+  padding: 12px 10px;
 }
 .pr_name{
   width: 100%;
@@ -774,12 +793,13 @@ width: 82%;
   outline: none;
   resize: vertical;
 }
+.create_pr_form1{
+  display: grid;
+  grid-template-rows: auto auto;
+}
 
 
       /* Dropdown Select */
-
-
-
 
  .wrap_select{
   width: 100%;
@@ -1852,6 +1872,7 @@ input[type=email],input[type=password],input[type=text]{
       grid-template-columns: 34% 32% 34%;
       padding-top: 23em;
   }
+  
 }
 /* laptop */
 @media screen and (max-width: 1024px) {
@@ -1866,10 +1887,44 @@ input[type=email],input[type=password],input[type=text]{
   .donate-button-wrap-home{
       padding-top: 27em;
   }
+
   
 }
+ /* header width */
+@media screen and (min-width: 944px){
+
+  .content_crtpr{
+    padding: 10px 0;
+    padding-top: 85px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10%;
+    justify-content: center;
+    align-content: space-between;
+  }
+  .create_pr_wrap{
+    padding: 10px 0 40px 0;
+  }
+  .create_proj{
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 4.77px 27.72px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center;
+    padding: 12px 200px;
+  }
+
+  .create_pr_form1{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: auto;
+  }
+  
+}
+
 /* tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 943px) {
   .main-text-home{
       font-size: 90px;
       padding-top: 15%;

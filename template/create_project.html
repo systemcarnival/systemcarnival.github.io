@@ -39,96 +39,95 @@
 
 
 
-    <div class="content">
+    <div class="content_crtpr">
         <p class="maintxt">Create your project</p>
-        <div class="wr">
-            <div class="create_pr_wrap">
-                <div class="create_proj">
-                    
-                    <p class="h-text ">Basic info:</p>
 
-                    <div class="pr_name">
-                        <div class="proj_name">
-                            <input type="text" name="name" id="name" placeholder="Project name">
-                        </div>
-                        <div >
-                            <textarea  class="validate[required,length[6,300]] details"  id="details" placeholder="Details" rows="7"></textarea>
-                        </div>
 
-                    </div>
+                                <!-- Images Upload -->
 
-                    <!-- Images Upload -->
-                    <p class="h3-text1">Add photos:</p>
-                    <div action="/file-upload" class="dropzone needsclick dz-clickable" id="demo-upload">
-                        <div class="dz-default dz-message">
-                          <input class="dz-button" type="button">Drag & drop photos here</input>
-                        </div>
-                    </div>
-                    
-
-                </div>
+        <form action="/upload-image" class="dropzone needsclick dz-clickable" id="demo-upload" enctype="multipart/form-data" method="POST">
+            <div class="dz-default dz-message">
+                <button class="dz-button" type="button" onchange="updateSize()">Drag & drop photos here</button>
+                <input type="hidden" name = "_csrf" value="${_csrf.token}"/>
             </div>
-          
-        </div>
+        </form>
 
-
-
-
-
-        <div class="wr">
-            <div class="create_pr_wrap">
-                <div class="create_proj">
-
-                    <p class="h-text ">More info:</p>
-                    
-                    <div class="wrap_select">
-                        <div class="categ_slct">
-                            <select name="slct" id="slct">
-                              <option selected disabled>Choose the category</option>
-                              <option value="1">Disaster</option>
-                              <option value="2">Education</option>
-                              <option value="3">Hunger</option>
-                              <option value="4">Environment</option>
-                              <option value="5">Health</option>
-                              <option value="6">Animals</option>
-                            </select>
-                        </div>
-                    </div>
-
-
-
-                    <input type="text" id="country" />
-                    <input type="hidden" id="country_code" />
-
-
-                    <p class="h3-text ">The amount of money <br> to be collected:</p>
-                    <div class="create_sum">
+        <br />
+        
+        <form action="/create-request" class="create_pr_form1" method="post">
+            <div class="wr">
+                <div class="create_pr_wrap">
+                    <div class="create_proj">
                         
-                        <input type='currency' value="$" class="currency_input" placeholder="">
+                        <p class="h-text ">Basic info:</p>
+
+                        <div class="pr_name">
+                            <div class="proj_name">
+                                <input type="text" name="name" id="name" placeholder="Project name">
+                            </div>
+                            <div >
+                                <textarea  class="validate[required,length[6,300]] details"  id="details" placeholder="Details" rows="7"></textarea>
+                            </div>
+
+                        </div>
+
+
+
+
+            
+                
+
+                        <p class="h-text ">More info:</p>
+                        
+                        <div class="wrap_select">
+                            <div class="categ_slct">
+                                <select name="slct" id="slct">
+                                <option selected disabled>Choose the category</option>
+                                <option value="1">Disaster</option>
+                                <option value="2">Education</option>
+                                <option value="3">Hunger</option>
+                                <option value="4">Environment</option>
+                                <option value="5">Health</option>
+                                <option value="6">Animals</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+
+                        <input type="text" id="country" />
+                        <input type="hidden" id="country_code" />
+
+
+                        <p class="h3-text ">The amount of money <br> to be collected:</p>
+                        <div class="create_sum">
+                            
+                            <input type='currency' value="$" class="currency_input" placeholder="">
+                        </div>
+
+                        
                     </div>
-
-                    
                 </div>
-            </div>
-          
-        </div>
-
-        
-
-        
-
-    </div>
-            <div class="wrapview">
-                <a href="">
-                    <div class="button_proj">Create project</div>
-                </a>
+            
             </div>
 
-            <div class="wrapview">
-                <a href="">
-                    <div class="cancel">Cancel</div>
-                </a>
+            
+
+            
+
             </div>
+                <div class="wrapview">
+                    <a href="">
+                        <div class="button_proj">Create project</div>
+                    </a>
+                </div>
+
+                <div class="wrapview">
+                    <a href="">
+                        <div class="cancel">Cancel</div>
+                    </a>
+                </div>
+        </form>
 
 
 
@@ -137,7 +136,6 @@
         
 
 
-    
 
 
             <footer>

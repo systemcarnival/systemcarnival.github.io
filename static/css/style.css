@@ -2068,3 +2068,6 @@ span.checkmark:hover::after {
     width: 85%;
   }
 }
+textarea::placeholder{
+  color: #757575;
+}

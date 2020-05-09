@@ -19,148 +19,110 @@
     <div class="wrap-header">
         <header>
             <form id="demo-2">
-              <input type="search" placeholder="Search">
-              <a href="project.html" class="logotype">Charitable</a>
+                <input type="search" placeholder="Search">
+                <a href="project.html" class="logotype">Charitable</a>
             </form>
-      
+
             <nav class="nav-collapse">
-              <ul>
-                <li class="menu-item"><a href="profile.html">Profile</a></li>
-                <li class="menu-item"><a href="requests.html">Projects</a></li>
-                <li class="menu-item pr0"><a href="signin.html">Log In</a></li>
-              </ul>
+                <ul>
+                    <li class="menu-item"><a href="profile.html">Profile</a></li>
+                    <li class="menu-item"><a href="requests.html">Projects</a></li>
+                    <li class="menu-item pr0"><a href="signin.html">Log In</a></li>
+                </ul>
             </nav>
-          </header>
+        </header>
     </div>
-
-
-
-
-
-
-
     <div class="content_crtpr">
         <p class="maintxt">Create your project</p>
 
+        <!-- Images Upload -->
 
-                                <!-- Images Upload -->
-
-        <form action="/upload-image" class="dropzone needsclick dz-clickable" id="demo-upload" enctype="multipart/form-data" method="POST">
+        <form action="/upload-image" class="dropzone needsclick dz-clickable" id="demo-upload"
+            enctype="multipart/form-data" method="POST">
             <div class="dz-default dz-message">
                 <button class="dz-button" type="button" onchange="updateSize()">Drag & drop photos here</button>
-                <input type="hidden" name = "_csrf" value="${_csrf.token}"/>
+                <input type="hidden" name="_csrf" value="${_csrf.token}" />
             </div>
         </form>
-
         <br />
-        
         <form action="/create-request" class="create_pr_form1" method="post">
-            <div class="wr">
+            <div class="wr2">
                 <div class="create_pr_wrap">
                     <div class="create_proj">
-                        
-                        <p class="h-text ">Basic info:</p>
-
-                        <div class="pr_name">
-                            <div class="proj_name">
-                                <input type="text" name="name" id="name" placeholder="Project name">
-                            </div>
-                            <div >
-                                <textarea  class="validate[required,length[6,300]] details"  id="details" placeholder="Details" rows="7"></textarea>
-                            </div>
-
-                        </div>
-
-
-
-
-            
-                
-
-                        <p class="h-text ">More info:</p>
-                        
-                        <div class="wrap_select">
-                            <div class="categ_slct">
-                                <select name="slct" id="slct">
-                                <option selected disabled>Choose the category</option>
-                                <option value="1">Disaster</option>
-                                <option value="2">Education</option>
-                                <option value="3">Hunger</option>
-                                <option value="4">Environment</option>
-                                <option value="5">Health</option>
-                                <option value="6">Animals</option>
-                                </select>
+                        <div class="basicinf">
+                            <p class="h-text ">Basic information:</p>
+                            <div class="pr_name">
+                                <div class="proj_name">
+                                    <input type="text" name="name" id="name" placeholder="Project name">
+                                </div>
+                                <div>
+                                    <textarea class="validate[required,length[6,300]] details" id="details"
+                                        placeholder="Description" rows="7"></textarea>
+                                </div>
                             </div>
                         </div>
-
-
-
+                        <div class="moreinf">
+                            <p class="h-text ">Additional details:</p>
+                            <div class="wrap_select">
+                                <div class="categ_slct">
+                                    <select name="slct" id="slct">
+                                        <option selected disabled>Choose the category</option>
+                                        <option value="1">Disaster</option>
+                                        <option value="2">Education</option>
+                                        <option value="3">Hunger</option>
+                                        <option value="4">Environment</option>
+                                        <option value="5">Health</option>
+                                        <option value="6">Animals</option>
+                                    </select>
+                                </div>
+                            </div>
+                        
                         <input type="text" id="country" />
                         <input type="hidden" id="country_code" />
-
-
                         <p class="h3-text ">The amount of money <br> to be collected:</p>
                         <div class="create_sum">
-                            
                             <input type='currency' value="$" class="currency_input" placeholder="">
                         </div>
-
-                        
                     </div>
                 </div>
-            
-            </div>
-
-            
-
-            
-
-            </div>
-                <div class="wrapview">
-                    <a href="">
-                        <div class="button_proj">Create project</div>
-                    </a>
                 </div>
-
-                <div class="wrapview">
-                    <a href="">
-                        <div class="cancel">Cancel</div>
-                    </a>
-                </div>
+            </div>
+            <div class="wrapview">
+                <a href="">
+                    <div class="button_proj">Create project</div>
+                </a>
+            </div>
+            <div class="wrapview">
+                <a href="">
+                    <div class="cancel">Cancel</div>
+                </a>
+            </div>
         </form>
+    </div>
 
-
-
-     
-
-        
-
-
-
-
-            <footer>
-                <div class="links">
-                    <div class="block1">
-                        <div class="row hr"><a href="#">Legal</a></div>
-                        <div class="row"><a href="#">Terms of Service</a></div>
-                        <div class="row"><a href="#">Privacy Policy</a></div>
-                        <div class="row"><a href="#">Cookie Information</a></div>
-                        <div class="row"><a href="#">GDPR Commitment</a></div>
-                    </div>
-                    <div class="block2">
-                        <div class="row hr"><a href="#">Company</a></div>
-                        <div class="row"><a href="#">Blog</a></div>
-                        <div class="row"><a href="#">Career</a></div>
-                        <div class="row"><a href="#">Privacy</a></div>
-                        <div class="row"><a href="#">About</a></div>
-                    </div>
-                </div>
-                <div class="block3">
-                    <p class="hr">System Carnival</p>
-                    Copyright © 2020 . Designed by Ivan Kagitin
-                    All rights reserved.
-                </div>
-            </footer>
+    <footer>
+        <div class="links">
+            <div class="block1">
+                <div class="row hr"><a href="#">Legal</a></div>
+                <div class="row"><a href="#">Terms of Service</a></div>
+                <div class="row"><a href="#">Privacy Policy</a></div>
+                <div class="row"><a href="#">Cookie Information</a></div>
+                <div class="row"><a href="#">GDPR Commitment</a></div>
+            </div>
+            <div class="block2">
+                <div class="row hr"><a href="#">Company</a></div>
+                <div class="row"><a href="#">Blog</a></div>
+                <div class="row"><a href="#">Career</a></div>
+                <div class="row"><a href="#">Privacy</a></div>
+                <div class="row"><a href="#">About</a></div>
+            </div>
+        </div>
+        <div class="block3">
+            <p class="hr">System Carnival</p>
+            Copyright © 2020 . Designed by Ivan Kagitin
+            All rights reserved.
+        </div>
+    </footer>
     </div>
 
     <script src="../static/js/fastclick.js"></script>

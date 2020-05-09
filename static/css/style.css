@@ -766,8 +766,7 @@ footer{
 }
 .proj_name{
   display: flex;
-  width: 90%;
-  margin: 0 5% ;
+  width: 100%;
 }
 textarea{
   cursor: text;
@@ -785,7 +784,7 @@ width: 82%;
   height: auto;
 }
 .details{
-  color: #73748b;
+  color: #000000;
   resize: vertical;
 }
 .details:focus{
@@ -810,9 +809,8 @@ width: 82%;
   display: flex;
   justify-content: center;
   position: relative;
-  width: 16em;
+  width: 100%;
   height: 2.6em;
-  line-height: 3;
   background: #F4F4F4;
   overflow: hidden;
   border-radius: 33.96px;
@@ -861,6 +859,7 @@ input[type=number] {
   font-size: 16px;
   margin: 0;
   text-align: center;
+  width: 256px;
 }
 
 
@@ -928,10 +927,10 @@ input[type=search] {
 }
 
 input:-moz-placeholder {
-	color: #73738D;
+	color: #757575;
 }
 input::-webkit-input-placeholder {
-	color: #73738D;
+	color: #757575;
 }
 .wrap   {
     text-align: center;
@@ -2039,4 +2038,33 @@ span.checkmark:hover::after {
   width: 100%;
   font-size: 15px;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 944px){
+  .wr2{
+    width: 100%;
+  }
+  .create_pr_form1{
+    width: 1100px;
+  }
+  .create_proj{
+    width: 100%;
+    padding: 0;
+  }
+  .basicinf, .moreinf{
+    width: 50%;
+  }
+  .create_proj{
+    display: flex;
+    padding: 35px 0 45px 0;
+  }
+}
+.categ_slct{
+  width: 256px;
+}
+@media screen and (max-width: 944px){
+  .dropzone.dz-clickable{
+    margin: 0 auto;
+    width: 85%;
+  }
 }

@@ -115,6 +115,9 @@ a{
     font-size: 18px;
     padding: 10px 25px;
 }
+.pad{
+  padding: 20px 25px;
+}
 .left{
     display: flex;
     justify-content: left;
@@ -740,10 +743,10 @@ footer{
 }
 .pr_name{
   width: 100%;
-  display: grid;
   justify-content: center;
   
 }
+
 
 .button_proj{
   box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
@@ -1359,27 +1362,31 @@ input[type=email],input[type=password],input[type=text]{
   .profile-image{
     width: 168px;
     height: 168px;
-    background-image: url(../img/Ellipse1.png);
+    background-image: url(../img/indian.png);
     background-position: center;
     background-size: cover;
+    border-radius: 50%;
   }
   .profile-info{
-    width: 55%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    height: 180px;
   } 
-  .ab-pr, .date-donate{
+  .ab-pr{
     display: flex;
     width: 100%;
     justify-content: space-between;
+  }
+  .date-donate{
+    display: flex;
+    width: 100%;
   }
   .top-section{
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-top: 15px;
-    align-items: center;
+    align-items: flex-end;
   }
   .discrbutton{
     max-width: 22%;
@@ -1408,7 +1415,6 @@ input[type=email],input[type=password],input[type=text]{
     padding-left: 0;
   }
   .pad{
-    padding: 22px 25px;
     width: 100%;
   }
   .prwraprecent{
@@ -1425,13 +1431,13 @@ input[type=email],input[type=password],input[type=text]{
     height: -webkit-fill-available;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
   }
   .calls{
     font-family: "GilroyBold";
     font-size: 24px;
     text-align: center;
-    padding: 22px 25px;
+    margin: 10px 25px;
+    width: 100%;
   }
   .maintxt{
     font-size: 24px;
@@ -1440,8 +1446,9 @@ input[type=email],input[type=password],input[type=text]{
   }
   .lighttxt{
     font-size: 18px;
-    font-family: "GilroyMedium";
+    font-family: "GilroySemiBold";
     color: #222222;
+    margin-top: 0;
   }
   .mt0{
     margin-top: 0;
@@ -1485,15 +1492,12 @@ input[type=email],input[type=password],input[type=text]{
     .profile-image{
         margin: auto;
     }
-    .ab-pr, .date-donate{
+    .ab-pr{
         flex-wrap: wrap;
   
     }
     .prof-name, .total{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
+      margin: auto;
     }
     .maintxt, .maintxtprof, .maintxtreq{
         margin-top: 24px!important;
@@ -1753,7 +1757,7 @@ input[type=email],input[type=password],input[type=text]{
       border-bottom: 2px solid #000000;
       padding-bottom: 20px;
     }
-    .demo, .innersearch, select{
+    .demo, .innersearch, select, .hide button{
       width: 100%!important;
     }
     .requests, .filters{
@@ -2007,7 +2011,6 @@ input[type=email],input[type=password],input[type=text]{
 }
 
 .maintxtprof {
-  text-align: center;
   font-size: 24px;
   font-family: "GilroySemiBold";
   margin-top: 0;
@@ -2067,7 +2070,252 @@ span.checkmark:hover::after {
     margin: 0 auto;
     width: 85%;
   }
+  .ab-pr .lighttxt{
+    width: 100%;
+      text-align: right;
+  }
+  .ab-pr .maintxtprof{
+    text-align: left;
+  }
 }
 textarea::placeholder{
   color: #757575;
+}
+
+
+
+.editspan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "GilroyMedium";
+  font-size: 15px;
+  color: #454554;
+  padding-top: 15px;
+  padding-left: 12%;
+  padding-left: 0px;
+}
+.editspan img{
+  padding: 0 7px;
+}
+.ach img{
+  width: 38px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.2), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
+}
+.badges{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color: #000000;
+  font-size: 17px;
+  font-family: 'GilroySemiBold';
+  position: relative;
+}
+.seeall{
+  padding-bottom: 3px;
+  border-bottom: 2px solid #000000;
+  text-align: center;
+}
+/* .ach{
+  position: relative;
+} */
+.ach{
+  width: 45px;
+  height: 45px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.2), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s; 
+  margin-right: 42px;
+}
+.ach:hover{
+  border: 3px solid #7692FF;
+}
+.firsthelp{
+  background-image: url(/static/img/4.jpg);
+}
+.firsthelp:after{
+  content: "First donation was made";
+}
+.tenthousand{
+  background-image: url(/static/img/3.jpg);
+}
+.tenthousand:after{
+  content: "Ten thousand dollars donated";
+}
+.animal{
+  background-image: url(/static/img/9.jpg);
+}
+.animal:after{
+  content: "Animal topic supported";
+}
+.topweek{
+  background-image: url(/static/img/7.jpg);
+}
+.topweek:after{
+  content: "Top donator of the week";
+}
+.education{
+  background-image: url(/static/img/13.jpg);
+}
+.education:after{
+  content: "Education topic supported";
+}
+.ach:hover:after{ 
+  font-size: 14px;
+  color: #454554;
+  position: absolute; 
+  top: -35px;
+  opacity: 1;
+  transition: all 0.3s; 
+  margin-left: -33px;
+}
+.ach:after{
+  font-size: 14px;
+  position: absolute; 
+  transition: all 0.3s;
+  opacity: 0;
+  top: -35px;
+  z-index: -1;
+  margin-left: -25px;
+}
+.verify-button{
+  color: #000000;
+  font-family: "GilroySemiBold";
+  height: fit-content;
+}
+.inner-ver{
+  border-radius: 33.96px;
+  text-align: center;
+  padding: 7px 25px;
+  box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.15), 0px 5.77px 27.72px rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  width: fit-content;
+}
+.total2{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.name-role, .verify-button{
+  width: 50%;
+}
+.week{
+  margin-right: 55px;
+}
+.img-edit{
+  margin-right: 40px;
+}
+.profil{
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.top-section, .bottom-section{
+  max-width: 1120px;
+  margin: auto;
+}
+.wrapts{
+  width: 100%;
+  box-shadow: 0px 15px 10px rgba(66, 58, 58, 0.05);
+  border-radius: 15px;
+  padding-bottom: 22px;
+}
+.suma{
+  font-size: 32px;
+}
+.hide button{
+  width: 80%;
+  margin-top: 35px;
+}
+.proj_name input{
+  width: 60%;
+  margin: 15px auto;
+}
+.pr_name textarea{
+  width: 60%;
+}
+@media screen and (max-width: 59em) {
+  .proj_name input{
+    width: 80%;
+  }
+  .pr_name textarea{
+    width: 80%;
+  }
+  .img-edit{
+    margin: auto;
+  }
+  .total2{
+    flex-wrap: wrap;
+  }
+  .name-role{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .lighttxt{
+    width: auto!important;
+    margin-bottom: 0;
+  }
+  .verify-button{
+    width: auto;
+    margin: auto;
+  }
+  .top-section{
+    padding: 0; 
+  }
+  .badges{
+    flex-wrap: wrap;
+    margin: 35px 0 15px 0;
+    justify-content: center;
+  }
+  .wrapts{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .ach{
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .profile-info{
+    height: auto;
+  }
+  .ach:hover:after{  
+    top: -25px;
+    margin-left: -33px;
+  }
+  .ach:after{
+    top: -25px;
+    margin-left: -25px;
+  }
+  .lighttxt{
+    text-align: center!important;
+  }
+  .profil{
+    padding: 10px;
+    padding-top: 85px;
+  }
+}
+.prrecent{
+  overflow: auto;
+}
+.sss {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0px!important;
+  box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.04), 0px 10.77px 27.72px rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  justify-content: center;
+}
+.ssslide {
+  top: auto;
+}
+.wrapslider{
+  margin-bottom: 44px;
 }

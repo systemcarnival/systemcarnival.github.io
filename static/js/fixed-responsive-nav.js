@@ -121,25 +121,25 @@
       }, 500);
     };
 
-    // Select the right navigation item when tapping the logo
-    document.querySelector(".logo").addEventListener("click", function (e) {
-      e.preventDefault();
-      wasNavigationTapped = true;
+    // // Select the right navigation item when tapping the logo
+    // document.querySelector(".logo").addEventListener("click", function (e) {
+    //   e.preventDefault();
+    //   wasNavigationTapped = true;
 
-      // Select first navigation item
-      selectActiveMenuItem(0);
+    //   // Select first navigation item
+    //   selectActiveMenuItem(0);
 
-      // Close navigation
-      navigation.close();
+    //   // Close navigation
+    //   navigation.close();
 
-      // Remove hash from the URL if pushState is supported
-      if (history.pushState) {
-        history.pushState("", document.title, window.location.pathname);
-      }
+    //   // Remove hash from the URL if pushState is supported
+    //   if (history.pushState) {
+    //     history.pushState("", document.title, window.location.pathname);
+    //   }
 
-      // Clear wasNavigationTapped check
-      clearTapCheck();
-    }, false);
+    //   // Clear wasNavigationTapped check
+    //   clearTapCheck();
+    // }, false);
 
     // When a navigation item is tapped, select it and begin scrolling
     forEach(links, function (i, el) {

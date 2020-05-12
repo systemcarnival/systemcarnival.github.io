@@ -1436,7 +1436,7 @@ input[type=email],input[type=password],input[type=text]{
     font-family: "GilroyBold";
     font-size: 24px;
     text-align: center;
-    margin: 10px 25px;
+    margin: 10px 0;
     width: 100%;
   }
   .maintxt{

@@ -148,10 +148,16 @@
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </body>
 <script> 
-$(window).bind('beforeunload', function(){
-    if( $('input').val() !== '' ){
-        return "It looks like you have input you haven't submitted."
-    }
+$(window).on("beforeunload", function() {
+
+return "Are you sure you want to leave the page?";
+
+});
+
+$(document).on("submit", "form", function(event) {
+
+$(window).off("beforeunload");
+
 });
 </script>
 </html>

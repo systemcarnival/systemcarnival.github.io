@@ -147,5 +147,19 @@
 
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </body>
+<script> 
 
+	$(window).on("beforeunload", function() {
+
+		return "Are you sure you would like to leave the page?";
+
+	});
+
+	$(document).on("submit", "form", function(event) {
+
+		$(window).off("beforeunload");
+
+	});
+
+</script>
 </html>

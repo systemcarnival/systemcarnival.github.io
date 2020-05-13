@@ -89,7 +89,7 @@
             </div>
             <div class="wrapview">
                 <a href="">
-                    <div class="button_proj">Create a project</div>
+                    <div class="button_proj">Create project</div>
                 </a>
             </div>
             <div class="wrapview">
@@ -148,9 +148,10 @@
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </body>
 <script> 
-
-	window.onbeforeunload = function(e) {
-    return "Sure you want to leave?";
-};
+$(window).bind('beforeunload', function(){
+    if( $('input').val() !== '' ){
+        return "It looks like you have input you haven't submitted."
+    }
+});
 </script>
 </html>

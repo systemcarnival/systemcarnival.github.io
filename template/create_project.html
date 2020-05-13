@@ -149,17 +149,10 @@
 </body>
 <script> 
 
-	$(window).on("beforeunload", function() {
-
-		return "Are you sure you would like to leave the page?";
-
-	});
-
-	$(document).on("submit", "form", function(event) {
-
-		$(window).off("beforeunload");
-
-	});
+	$('input').change(function() {
+    if( $(this).val() != "" )
+        window.onbeforeunload = "Are you sure you want to leave?";
+});
 
 </script>
 </html>

@@ -149,10 +149,8 @@
 </body>
 <script> 
 
-	$('input').change(function() {
-    if( $(this).val() != "" )
-        window.onbeforeunload = "Are you sure you want to leave?";
-});
-
+	window.onbeforeunload = function(e) {
+    return "Sure you want to leave?";
+};
 </script>
 </html>

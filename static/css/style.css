@@ -1368,6 +1368,7 @@ input[type=email],input[type=password],input[type=text]{
     border-radius: 50%;
   }
   .profile-info{
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -2122,8 +2123,9 @@ textarea::placeholder{
   position: relative;
 } */
 .ach{
-  width: 45px;
-  height: 45px;
+  opacity: 0;
+  width: 38px;
+  height: 38px;
   border: 3px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.2), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
@@ -2136,30 +2138,35 @@ textarea::placeholder{
   border: 3px solid #7692FF;
 }
 .firsthelp{
+  opacity: 1;
   background-image: url(/static/img/4.jpg);
 }
 .firsthelp:after{
   content: "First donation was made";
 }
 .tenthousand{
+  opacity: 1;
   background-image: url(/static/img/3.jpg);
 }
 .tenthousand:after{
   content: "Ten thousand dollars donated";
 }
 .animal{
+  opacity: 1;
   background-image: url(/static/img/9.jpg);
 }
 .animal:after{
   content: "Animal topic supported";
 }
 .topweek{
+  opacity: 1;
   background-image: url(/static/img/7.jpg);
 }
 .topweek:after{
   content: "Top donator of the week";
 }
 .education{
+  opacity: 1;
   background-image: url(/static/img/13.jpg);
 }
 .education:after{
@@ -2201,14 +2208,11 @@ textarea::placeholder{
   width: 100%;
   justify-content: space-between;
 }
-.name-role, .verify-button{
+.name-role{
   width: 50%;
 }
 .week{
   margin-right: 55px;
-}
-.img-edit{
-  margin-right: 40px;
 }
 .profil{
   max-width: none;
@@ -2319,3 +2323,54 @@ textarea::placeholder{
 .wrapslider{
   margin-bottom: 44px;
 }
+.categ_slct, .create_sum, .proj_name, .details_wrap{
+  display: grid;
+}
+.categ_slct .error, .create_sum .error{
+  padding: 12px 0 0 0;
+  text-align: center;
+}
+.details{
+  margin: auto;
+}
+.pr_name .error{
+  width: 60%;
+  margin: auto;
+  padding-left: 0;
+}
+.details{
+  margin: 15px auto;
+}
+.home-card-text p, .rb-descm, .description, .home-card-text h2{
+  word-break: break-all;
+}
+.percentage{
+  margin-left: 0;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+
+.week{
+  margin-right: 0;
+}
+.date-donate{
+  justify-content: space-between;
+}
+.seeall{
+  white-space: nowrap;
+}
+.overall{
+  width: 100%;
+  max-width: 290px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 180px;
+}
+.badges{
+  justify-content: space-evenly;
+}
+/* .ach:nth-child(2) {
+  flex-basis: 100%;
+  border: 2px solid red;
+} */

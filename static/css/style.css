@@ -2341,7 +2341,7 @@ textarea::placeholder{
 .details{
   margin: 15px auto;
 }
-.home-card-text p, .rb-descm, .description, .home-card-text h2{
+.home-card-text p, .rb-desc, .description, .home-card-text h2{
   word-break: break-all;
 }
 .percentage{
@@ -2374,3 +2374,24 @@ textarea::placeholder{
   flex-basis: 100%;
   border: 2px solid red;
 } */
+
+.region select{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 2.6em;
+  background: #F4F4F4;
+  overflow: hidden;
+  border-radius: 33.96px;
+  margin: 15px 0 0 0;
+  padding: 0 10% 0 17%;
+  text-align: center;
+}
+.region{
+  width: 256px;
+  margin: auto;
+}
+#countryId{
+  margin-top: 0;
+}

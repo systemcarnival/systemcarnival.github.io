@@ -2443,6 +2443,7 @@ textarea::placeholder{
   flex-wrap: wrap;
   align-content: space-between;
   height: 180px;
+  margin:auto;
 }
 .badges{
   justify-content: space-evenly;

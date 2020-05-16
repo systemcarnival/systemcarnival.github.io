@@ -2443,7 +2443,6 @@ textarea::placeholder{
   flex-wrap: wrap;
   align-content: space-between;
   height: 180px;
-  margin:auto;
 }
 .badges{
   justify-content: space-evenly;
@@ -2633,5 +2632,9 @@ textarea::placeholder{
 @media screen and (max-width: 59em) {
   .awrap{
     width: 50%;
+  }
+  .overall{
+    margin: auto;
+    margin-top: 20px;
   }
 }

@@ -730,6 +730,9 @@ footer{
   max-width: 1120px;
   justify-content: space-between;
 }
+.vrf{
+  grid-template-rows: 0%!important;
+}
 .create_pr_wrap{
   padding: 10px 0;
 }
@@ -1862,8 +1865,6 @@ input[type=email],input[type=password],input[type=text]{
 
   /*                                            Verification page                                                 */
   #steps {
-    width: 80%;
-    
     margin: 50px 34%; 
   }
   
@@ -1934,10 +1935,15 @@ input[type=email],input[type=password],input[type=text]{
       background-position: center;
       background-size: 50%;
       background-repeat: no-repeat;
-      height: 450px;
-      padding-bottom: 40px;
+      height: 200px;
+      width: 50%;
+      margin: auto;
+      padding-bottom: 90px;
       -webkit-filter: drop-shadow(5px 5px 5px #36363657);
       filter: drop-shadow(5px 5px 5px #36363657);
+}
+.vrf .maintxt{
+  margin-bottom: 0;
 }
 .image_docs_review{
   background-image: url(..//img/docs_review.png);

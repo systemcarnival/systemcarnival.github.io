@@ -2500,7 +2500,7 @@ textarea::placeholder{
   background-image: url(../../static/img/7.jpg);
 }
 .topweek:after{
-  content: "Top donator of the weeek";
+  content: "Top donator of the week";
 }
 .topmonth{
   opacity: 1;
@@ -2597,7 +2597,8 @@ textarea::placeholder{
   background-size: cover;
   transition: all 0.3s; 
   margin: auto;
-  background-attachment: initial;
+  background-position: center;
+  background-size: cover;
 }
 .round:after{
   content: none;

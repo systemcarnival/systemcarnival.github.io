@@ -66,3 +66,8 @@ $(document).ready(function(){
       $(".hide").animate({height:'toggle',marginBottom:'0'},300);
     });
   });
+
+  var cw = $('.round').width();
+  $('.round').css({
+      'height': cw + 'px'
+  });

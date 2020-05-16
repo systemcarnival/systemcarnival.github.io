@@ -2249,41 +2249,6 @@ textarea::placeholder{
 .ach:hover{
   border: 3px solid #7692FF;
 }
-.firsthelp{
-  opacity: 1;
-  background-image: url(/static/img/4.jpg);
-}
-.firsthelp:after{
-  content: "First donation was made";
-}
-.tenthousand{
-  opacity: 1;
-  background-image: url(/static/img/3.jpg);
-}
-.tenthousand:after{
-  content: "Ten thousand dollars donated";
-}
-.animal{
-  opacity: 1;
-  background-image: url(/static/img/9.jpg);
-}
-.animal:after{
-  content: "Animal topic supported";
-}
-.topweek{
-  opacity: 1;
-  background-image: url(/static/img/7.jpg);
-}
-.topweek:after{
-  content: "Top donator of the week";
-}
-.education{
-  opacity: 1;
-  background-image: url(/static/img/13.jpg);
-}
-.education:after{
-  content: "Education topic supported";
-}
 .ach:hover:after{ 
   font-size: 14px;
   color: #454554;
@@ -2506,4 +2471,166 @@ textarea::placeholder{
 }
 #countryId{
   margin-top: 0;
+}
+
+
+.firsthelp{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/4.jpg);
+}
+.firsthelp:after{
+  content: "You have fully collected one request";
+}
+.fivedonations{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/5.jpg);
+}
+.fivedonations:after{
+  content: "You have fully collected five requests";
+}
+.topday{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/6.jpg);
+}
+.topday:after{
+  content: "Top donator of the day";
+}
+.topweek{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/7.jpg);
+}
+.topweek:after{
+  content: "Top donator of the week";
+}
+.topmonth{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/8.jpg);
+}
+.topmonth:after{
+  content: "Top donator of the month";
+}
+.onethousand{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/2.jpg);
+}
+.onethousand:after{
+  content: "One thousand dollars donated";
+}
+.tenthousand{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/3.jpg);
+}
+.tenthousand:after{
+  content: "Ten thousand dollars donated";
+}
+.animal{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/9.jpg);
+}
+.animal:after{
+  content: "Animal topic supported";
+}
+.education{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/13.jpg);
+}
+.education:after{
+  content: "Education topic supported";
+}
+.health{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/14.jpg);
+}
+.health:after{
+  content: "Health topic supported";
+} 
+.environment{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/11.jpg);
+}
+.environment:after{
+  content: "Environment topic supported";
+} 
+.disaster{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/10.jpg);
+}
+.disaster:after{
+  content: "Disaster topic supported";
+} 
+.hunger{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/12.jpg);
+}
+.hunger:after{
+  content: "Hunger topic supported";
+} 
+.localhero{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/15.jpg);
+}
+.localhero:after{
+  content: "The most active donator in the town";
+}
+.globalhero{
+  opacity: 1;
+  background-image: url(../../static/img/achievements/16.jpg);
+}
+.globalhero:after{
+  content: "The most active donator in the world";
+}
+.achievements{
+  display: flex;
+  width: 100%;
+  color: #000000;
+  font-size: 17px;
+  font-family: 'GilroySemiBold';
+  position: relative;
+  flex-wrap: wrap;
+}
+.round{
+  width: 50%;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 31.19px rgba(54, 54, 54, 0.2), 0px 2.77px 27.72px rgba(0, 0, 0, 0.04);
+  background-position: center;
+  background-size: cover;
+  transition: all 0.3s; 
+  margin: auto;
+}
+.round:after{
+  content: "";
+}
+.awrap{
+  margin-top: 40px;
+  width: 20%;
+  text-align: center;
+  font-family: "GilroySemiBold";
+  font-size: 15px;
+}
+.round{
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); 
+  opacity: .7;
+}
+.awrap p:after{
+  color: #757575;
+  opacity: .8;
+}
+.got .round, .got p:after{
+  -webkit-filter: grayscale(0%); 
+  filter: grayscale(0%); 
+  opacity: 1;
+  color: #000000!important;
+}
+.awrap p{
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 59em) {
+  .awrap{
+    width: 50%;
+  }
 }

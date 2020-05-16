@@ -2476,105 +2476,105 @@ textarea::placeholder{
 
 .firsthelp{
   opacity: 1;
-  background-image: url(../../static/img/achievements/4.jpg);
+  background-image: url(/static/img/achievements/4.jpg);
 }
 .firsthelp:after{
-  content: "You have fully collected one request";
+  content: "You have fully collected one requests";
 }
 .fivedonations{
   opacity: 1;
-  background-image: url(../../static/img/achievements/5.jpg);
+  background-image: url(/static/img/achievements/5.jpg);
 }
 .fivedonations:after{
   content: "You have fully collected five requests";
 }
 .topday{
   opacity: 1;
-  background-image: url(../../static/img/achievements/6.jpg);
+  background-image: url(/static/img/achievements/6.jpg);
 }
 .topday:after{
   content: "Top donator of the day";
 }
 .topweek{
   opacity: 1;
-  background-image: url(../../static/img/achievements/7.jpg);
+  background-image: url(/static/img/achievements/7.jpg);
 }
 .topweek:after{
   content: "Top donator of the week";
 }
 .topmonth{
   opacity: 1;
-  background-image: url(../../static/img/achievements/8.jpg);
+  background-image: url(/static/img/achievements/8.jpg);
 }
 .topmonth:after{
   content: "Top donator of the month";
 }
 .onethousand{
   opacity: 1;
-  background-image: url(../../static/img/achievements/2.jpg);
+  background-image: url(/static/img/achievements/2.jpg);
 }
 .onethousand:after{
   content: "One thousand dollars donated";
 }
 .tenthousand{
   opacity: 1;
-  background-image: url(../../static/img/achievements/3.jpg);
+  background-image: url(/static/img/achievements/3.jpg);
 }
 .tenthousand:after{
   content: "Ten thousand dollars donated";
 }
 .animal{
   opacity: 1;
-  background-image: url(../../static/img/achievements/9.jpg);
+  background-image: url(/static/img/achievements/9.jpg);
 }
 .animal:after{
   content: "Animal topic supported";
 }
 .education{
   opacity: 1;
-  background-image: url(../../static/img/achievements/13.jpg);
+  background-image: url(/static/img/achievements/13.jpg);
 }
 .education:after{
   content: "Education topic supported";
 }
 .health{
   opacity: 1;
-  background-image: url(../../static/img/achievements/14.jpg);
+  background-image: url(/static/img/achievements/14.jpg);
 }
 .health:after{
   content: "Health topic supported";
 } 
 .environment{
   opacity: 1;
-  background-image: url(../../static/img/achievements/11.jpg);
+  background-image: url(/static/img/achievements/11.jpg);
 }
 .environment:after{
   content: "Environment topic supported";
 } 
 .disaster{
   opacity: 1;
-  background-image: url(../../static/img/achievements/10.jpg);
+  background-image: url(/static/img/achievements/10.jpg);
 }
 .disaster:after{
   content: "Disaster topic supported";
 } 
 .hunger{
   opacity: 1;
-  background-image: url(../../static/img/achievements/12.jpg);
+  background-image: url(/static/img/achievements/12.jpg);
 }
 .hunger:after{
   content: "Hunger topic supported";
 } 
 .localhero{
   opacity: 1;
-  background-image: url(../../static/img/achievements/15.jpg);
+  background-image: url(/static/img/achievements/15.jpg);
 }
 .localhero:after{
   content: "The most active donator in the town";
 }
 .globalhero{
   opacity: 1;
-  background-image: url(../../static/img/achievements/16.jpg);
+  background-image: url(/static/img/achievements/16.jpg);
 }
 .globalhero:after{
   content: "The most active donator in the world";

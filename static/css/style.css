@@ -2637,6 +2637,35 @@ textarea::placeholder{
   margin-top: 20px;
 }
 
+
+.donations{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.back{
+  text-align: left;
+  font-family: "GilroyMedium";
+}
+.thelist, .detailed{
+  width: 50%;
+}
+.listof{
+  padding: 0 25px 30px 25px;
+  word-break: break-word;
+}
+.thelist .recent{
+  padding-bottom: 30px;
+}
+.innerdet{
+  margin: auto;
+  text-align: center;
+  padding-top: 57px;
+}
+.innerdet .button_proj{
+  width: fit-content;
+  margin: 32px auto;
+}
 @media screen and (max-width: 59em) {
   .awrap{
     width: 50%;
@@ -2644,5 +2673,14 @@ textarea::placeholder{
   .overall{
     margin: auto;
     margin-top: 20px;
+  }
+  .thelist, .detailed{
+    width: 100%;
+  }
+  .thelist{
+    order: 1;
+  }
+  .innerdet{
+    padding-top: 0;
   }
 }

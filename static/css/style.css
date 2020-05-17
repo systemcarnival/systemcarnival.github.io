@@ -1864,6 +1864,10 @@ input[type=email],input[type=password],input[type=text]{
 
 
   /*                                            Verification page                                                 */
+  .tab{
+    display: none;
+  }
+
   #steps {
     margin: 50px 34%; 
   }
@@ -1921,13 +1925,13 @@ input[type=email],input[type=password],input[type=text]{
   .step.active:after {
     color: #7692FF;  
   }
-  .step.done {
+  .step.finish {
     background-color: #58BB58;
     border-color: #58BB58;
     
     color: white;
   }
-  .step.done:before {
+  .step.finish:before {
     background-color: #58BB58;  
   }  
   .image_passport {

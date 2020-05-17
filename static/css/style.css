@@ -2688,3 +2688,15 @@ textarea::placeholder{
     padding-top: 0;
   }
 }
+.ll, .secondstep, .firststep, .thirdstep{
+  display: none;
+}
+#secondstep:target{
+  display: block;
+}
+#firststep:target{
+  display: block;
+}
+#thirdstep:target{
+  display: block;
+}

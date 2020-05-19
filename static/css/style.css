@@ -2772,3 +2772,49 @@ textarea::placeholder{
 .e .create_proj{
   padding-top: 10px;
 }
+.plus{
+  background: #7B91F7;
+  border-radius: 33.96px;
+  padding: 0 12px;
+  color: #ffffff;
+}
+.plus:after{
+  content: "Create request";
+  position: absolute;
+  color: #000000;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s; 
+  z-index: -1;
+}
+.plus:hover:after{
+  content: "Create request";
+  position: absolute;
+  left: -135px;
+  transition: all 0.3s; 
+  opacity: 1;
+  z-index: -1;
+}
+.js .nav-collapse{
+  overflow: visible;
+}
+.menu-item:nth-child(1) a{
+  padding-left: 0;
+}
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 59em) {
+  .mobile{
+    display: block;
+  }
+  .plus{
+    display: none;
+    width: fit-content;
+    margin-right: 8px;
+  }
+  .menu-item:nth-child(1) a{
+    display: flex;
+    padding-left: 18px;
+  }
+}

@@ -2911,12 +2911,12 @@ textarea::placeholder{
     display: none;
   }
   .e .profile-info{
-    padding-top: 50px;
+    padding-top: 80px;
   }
   .e .editspan {
     margin-top: 85px;
 }
-.profile-image, .eclipse , .editimg{
+.profile-image, .eclipse , .editimg, #pr.dropped{
   width: 200px;
   height: 200PX;
 }

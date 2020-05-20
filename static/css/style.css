@@ -2916,7 +2916,7 @@ textarea::placeholder{
   .e .editspan {
     margin-top: 85px;
 }
-.profile-image, .eclipse {
+.profile-image, .eclipse , .editimg{
   width: 200px;
   height: 200PX;
 }

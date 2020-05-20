@@ -2900,6 +2900,13 @@ textarea::placeholder{
 .e .editspan a{
   color: rgb(236, 238, 239);
 }
+.e form{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1120px;
+  justify-content: space-between;
+}
 @media screen and (max-width: 59em) {
   .edt{
     flex-wrap: wrap;

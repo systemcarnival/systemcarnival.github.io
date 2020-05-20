@@ -1523,10 +1523,6 @@ input[type=email],input[type=password],input[type=text]{
     .pad {
         padding: 22px 8px;
     }
-    .profile-image, .eclipse {
-        width: 200px;
-        height: 200PX;
-    }
   }
   
   
@@ -2919,5 +2915,9 @@ textarea::placeholder{
   }
   .e .editspan {
     margin-top: 85px;
+}
+.profile-image, .eclipse {
+  width: 200px;
+  height: 200PX;
 }
 }

@@ -2183,8 +2183,8 @@ input[type=email],input[type=password],input[type=text]{
   width: 100%;
   text-align: center;
 }
-img.checkmark{
-  padding: 0 7px ;
+.checkmark{
+  padding: 0 8px ;
 }
 span.checkmark:hover::after {
   content: "Your account is verified";
@@ -2927,4 +2927,29 @@ textarea::placeholder{
   width: 200px;
   height: 200PX;
 }
+}
+.prrecent::-webkit-scrollbar {
+  width: 8px;
+}
+.prrecent::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+.prrecent::-webkit-scrollbar-thumb {
+  background: #757575; 
+  border-radius: 25px;
+}
+.prrecent::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+span.checkmark:hover::after {
+  content: "Your account is verified";
+  font-size: 14px;
+  color: #454554;
+  position: absolute;
+  top: -11px;
+  width: max-content;
+  left: 20px;
+}
+.checkmark{
+  position: relative;
 }

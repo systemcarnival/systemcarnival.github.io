@@ -2334,7 +2334,7 @@ textarea::placeholder{
   justify-content: space-between;
 }
 .name-role{
-  width: 50%;
+  min-width: 50%;
 }
 .week{
   margin-right: 55px;
@@ -2946,10 +2946,82 @@ span.checkmark:hover::after {
   font-size: 14px;
   color: #454554;
   position: absolute;
-  top: -11px;
+  top: -20px;
   width: max-content;
   left: 20px;
 }
 .checkmark{
   position: relative;
+}
+.names{
+  display: flex;
+  justify-content: space-between;
+}
+.name1, .name2{
+  width: 40%;
+}
+@media screen and (max-width: 59em) {
+  .names{
+    display: block;
+    text-align: left;
+  }
+  .name1, .name2, .name3{
+    width: auto;
+  }
+  .lighttxt{
+    text-align: left!important;
+  }
+  .e .profile-info {
+    padding-top: 50px;
+}
+}
+.save{
+  background: #7692FF!important;
+  border-radius: 33.96px;
+  border: hidden!important;
+  padding: 15px 50px!important;
+  color: #ffffff!important;
+  margin: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.arrow{
+  font-size: 18px;
+  font-family: "GilroySemiBold";
+  color: #222222;
+  max-width: 1120px;
+  margin: auto;
+}
+.hiddeninfo{
+  display: none;
+}
+.irow{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.arrdown{
+  width: 100%;
+  text-align: center;
+}
+.rt0{
+  transform: rotate(0deg);
+  transition: all 0.3s;
+}
+.rt180{
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+.irow .txtinfo{
+  margin-bottom: 0;
+}
+.arrow{
+  margin-top: 20px;
+}
+@media screen and (max-width: 59em) {
+  .irow{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

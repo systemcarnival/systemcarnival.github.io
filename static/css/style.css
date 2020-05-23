@@ -3025,3 +3025,10 @@ span.checkmark:hover::after {
     justify-content: center;
   }
 }
+.ls{
+  display: flex;
+  align-items: center;
+}
+.requests .topic2{
+  justify-content: space-between;
+}

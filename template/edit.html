@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Profile</title>
     <link rel="stylesheet" href="../static/css/style.css">
-    <script src="../static/js/responsive-nav.js"></script>
+    <script src="../static/js/responsive-nav.js"></script>   
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//geodata.solutions/includes/countrystatecity.js"></script>
 </head>
@@ -30,99 +29,85 @@
     </div>
     <div class="content profil e">
         <form action="">
-            <div class="wrapts">
-                <div class="top-section">
-                    <div class="img-edit">
-                        <div class="profile-image " id="pr">
+        <div class="wrapts">
+            <div class="top-section">
+                <div class="img-edit">
+                    <div class="profile-image " id="pr">
                             <!-- <div id="holder" class="holder_default">
                               <img src="" id="image_droped" width="200" style="border: 3px dashed #7A97FC;" class=" hidden"/>
                               <input type="file" id="fileInput" />
                             </div> -->
                             <div class="eclipse"></div>
-
+                            
                             <img id="myImg" src="#" alt="your image">
                             <span class="editspan">
                                 <img src="../static/img/lightedit.svg" alt="">
                                 <a href="#">Upload photo</a>
                             </span>
-                            <input type='file' class="editimg" />
-                        </div>
-
+                            <input type='file' class="editimg"/>
                     </div>
-                    <div class="profile-info">
-                        <div class="ab-pr">
-                            <div class="total2">
-                                <div class="name-role edt">
-                                    <div class="names">
-                                        <div class="name1">
-                                            <p class="lighttxt">Name</p>
-                                            <input type="text" name="name" id="name" placeholder="Edit name"
-                                                value="Ivan">
-                                        </div>
-                                        <div class="name2">
-                                            <p class="lighttxt">Surname</p>
-                                            <input type="text" name="name" id="name" placeholder="Edit name"
-                                                value="Kagitin">
-                                        </div>
-                                    </div>
-                                    <div class="name3">
-                                        <p class="lighttxt">E-mail</p>
-                                    <input type="email" name="email" id="email" placeholder="Edit e-mail"
-                                        value="example@amazon">
-                                    </div>
-                                </div>
+                    
+                </div>
+                <div class="profile-info">
+                    <div class="ab-pr">
+                        <div class="total2">
+                            <div class="name-role edt">
+                                <p class="lighttxt">Name</p>
+                                <input type="text" name="name" id="name" placeholder="Edit name" value="Ivan Kagitin">
+                                <p class="lighttxt">E-mail</p>
+                                <input type="email" name="email" id="email" placeholder="Edit e-mail" value="example@amazon">
                             </div>
                         </div>
                     </div>
-                    <div class="overall">
-
-                    </div>
+                </div>
+                <div class="overall">
+                    
                 </div>
             </div>
-            <div class="bottom-section">
-                <div class="create_proj">
-                    <div class="basicinf">
-                        <p class="h-text ">Edit your password:</p>
-                        <div class="pr_name">
-                            <div class="proj_name">
-                                <input type="password" name="" id="" placeholder="Enter old password">
-                                <input type="password" name="" id="" placeholder="Enter new password">
-                                <input type="password" name="" id="" placeholder="Confirm new password">
-                            </div>
+        </div>
+        <div class="bottom-section">
+            <div class="create_proj">
+                <div class="basicinf">
+                    <p class="h-text ">Edit your password:</p>
+                    <div class="pr_name">
+                        <div class="proj_name">
+                            <input type="password" name="" id="" placeholder="Enter old password">
+                            <input type="password" name="" id="" placeholder="Enter new password">
+                            <input type="password" name="" id="" placeholder="Confirm new password">
                         </div>
-                    </div>
-                    <div class="moreinf">
-                        <p class="h-text ">Edit your region:</p>
-                        <div class="wrap_select">
-                        </div>
-
-                        <div class="region edit">
-                            <select name="country" class="countries" id="countryId">
-                                <option value="">Select Country</option>
-                            </select>
-                            <select name="state" class="states" id="stateId">
-                                <option value="">Select State</option>
-                            </select>
-                            <select name="city" class="cities" id="cityId">
-                                <option value="">Select City</option>
-                            </select>
-                        </div>
-
                     </div>
                 </div>
+                <div class="moreinf">
+                    <p class="h-text ">Edit your region:</p>
+                    <div class="wrap_select">
+                    </div>
 
+                    <div class="region edit">
+                        <select name="country" class="countries" id="countryId">
+                            <option value="">Select Country</option>
+                        </select>
+                        <select name="state" class="states" id="stateId">
+                            <option value="">Select State</option>
+                        </select>
+                        <select name="city" class="cities" id="cityId">
+                            <option value="">Select City</option>
+                        </select>
+                    </div>
+
+                </div>
             </div>
-            <input type="submit" class="save" value="Save">
-            <div class="wrapview">
-                <a href="">
-                    <div class="button_proj">Save</div>
-                </a>
-            </div>
-            <div class="wrapview">
-                <a href="">
-                    <div class="cancel" id="cancel">Cancel</div>
-                </a>
-            </div>
+            
+        </div>
+        <div class="wrapview">
+            <a href="">
+                <div class="button_proj">Save</div>
+            </a>
+        </div>
+        <div class="wrapview">
+            <a href="">
+                <div class="cancel" id="cancel">Cancel</div>
+            </a>
+        </div>
         </form>
         <footer>
             <div class="links">
@@ -152,42 +137,42 @@
     <script src="../static/js/scroll.js"></script>
     <script src="../static/js/fixed-responsive-nav.js"></script>
     <script>
-        //         $(document).ready(function() {
-        //     var holder = document.getElementById('holder');
-        //     holder.ondragover = function () { this.className = 'hover'; return false; };
-        //     holder.ondrop = function (e) {
-        //       this.className = 'hidden';
-        //       e.preventDefault();
-        //       var file = e.dataTransfer.files[0];
-        //       var reader = new FileReader();
-        //       reader.onload = function (event) {
-        //           document.getElementById('image_droped').className='visible'
-        //           $('#image_droped').attr('src', event.target.result);
-        //       }
-        //       reader.readAsDataURL(file);
-        //     };
-        // });
-        window.addEventListener('load', function () {
-            document.querySelector('input[type="file"]').addEventListener('change', function () {
-                if (this.files && this.files[0]) {
-                    var img = document.querySelector('img');
-                    img.src = URL.createObjectURL(this.files[0]);
-                    img.onload = imageIsLoaded;
-                }
+//         $(document).ready(function() {
+//     var holder = document.getElementById('holder');
+//     holder.ondragover = function () { this.className = 'hover'; return false; };
+//     holder.ondrop = function (e) {
+//       this.className = 'hidden';
+//       e.preventDefault();
+//       var file = e.dataTransfer.files[0];
+//       var reader = new FileReader();
+//       reader.onload = function (event) {
+//           document.getElementById('image_droped').className='visible'
+//           $('#image_droped').attr('src', event.target.result);
+//       }
+//       reader.readAsDataURL(file);
+//     };
+// });
+window.addEventListener('load', function() {
+  document.querySelector('input[type="file"]').addEventListener('change', function() {
+      if (this.files && this.files[0]) {
+          var img = document.querySelector('img');  
+          img.src = URL.createObjectURL(this.files[0]); 
+          img.onload = imageIsLoaded;
+      }
+      
+  });
+});
 
-            });
-        });
-
-        function imageIsLoaded() {
-            document.getElementById("myImg").style.display = "block";
-            var element = document.getElementById("pr");
-            element.classList.add("dropped");
-            // update width and height ...
-        }
-        $(document).ready(function () {
-            var holder = document.getElementById('pr');
-            holder.ondragover = function () { this.className = 'hover'; return false; };
-        });
+function imageIsLoaded() { 
+    document.getElementById("myImg").style.display = "block";
+    var element = document.getElementById("pr");
+  element.classList.add("dropped");
+  // update width and height ...
+}
+$(document).ready(function() {
+    var holder = document.getElementById('pr');
+    holder.ondragover = function () { this.className = 'hover'; return false; };
+});
 
     </script>
 </body>

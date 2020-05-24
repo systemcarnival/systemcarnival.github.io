@@ -68,12 +68,12 @@
                                 <div class="categ_slct">
                                     <select name="slct" id="slct">
                                         <option selected disabled>Choose the category</option>
-                                        <option value="Disaster">Disaster</option>
-                                        <option value="Education">Education</option>
-                                        <option value="Hunger">Hunger</option>
-                                        <option value="Environment">Environment</option>
-                                        <option value="Health">Health</option>
-                                        <option value="Animals">Animals</option>
+                                        <option value="1">Disaster</option>
+                                        <option value="2">Education</option>
+                                        <option value="3">Hunger</option>
+                                        <option value="4">Environment</option>
+                                        <option value="5">Health</option>
+                                        <option value="6">Animals</option>
                                     </select>
                                 </div>
 
@@ -108,10 +108,9 @@
             </div>
             <div class="wrapview">
                 <a href="">
-                    <div class="cancel" id="cancel" >Cancel</div>
+                    <div class="cancel" id="cancel">Cancel</div>
                 </a>
             </div>
-            <input type="submit">
         </form>
 
         <footer>
@@ -163,22 +162,6 @@
     <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </body>
 <script>
-    var select = document.querySelector("#slct");
-    var selectOption = select.options[select.selectedIndex];
-    var lastSelected = localStorage.getItem('select');
-
-    if (lastSelected) {
-        select.value = lastSelected;
-    }
-
-    select.onchange = function () {
-        lastSelected = select.options[select.selectedIndex].value;
-        console.log(lastSelected);
-        localStorage.setItem('select', lastSelected);
-    }
-
-    // var detaiils = document.getElementById("details").value ;
-    //     localStorage.setItem("details", detaiils) ;
     var elements = document.querySelectorAll('#name, #details');
 
     function checkValidity() { };
@@ -186,30 +169,20 @@
     for (i = 0; i < elements.length; i++) {
         (function (element) {
             var id = element.getAttribute('id');
-            element.value = localStorage.getItem(id); 
+            element.value = sessionStorage.getItem(id); // обязательно наличие у элементов id
             element.oninput = function () {
-                localStorage.setItem(id, element.value);
+                sessionStorage.setItem(id, element.value);
                 checkValidity();
             };
         })(elements[i]);
     }
-    $(window).on("beforeunload", function () {
+    document.getElementById("slct").onchange = function () {
+        localStorage.setItem('slct', document.getElementById("slct").value);
+    }
 
-        return "Are you sure you want to leave the page?";
-
-    });
-
-    $(document).on("submit", "form", function (event) {
-        $(window).off("beforeunload");
-        localStorage.clear();
-    });
-    $("#cancel").click(function () {
-        $(window).off("beforeunload");
-        localStorage.removeItem('select');
-        localStorage.removeItem('name');
-        localStorage.removeItem('details');
-        window.location.reload();
-    });
+    if (localStorage.getItem('slct')) {
+        document.getElementById("slct").options[localStorage.getItem('slct')].selected = true;
+    }
 </script>
 
 </html>

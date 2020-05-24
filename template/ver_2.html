@@ -34,108 +34,67 @@
     </div>
 
     <div class="content_crtpr vrf">
-        <div class="firststep" id="firststep">
-            <p class="maintxt">Verify your profile</p>
+        <p class="maintxt">Verify your profile</p>
+                <div class="firststep tab" id="firststep">
+                    <div id="steps">
+                        <div class="step active" data-desc="Passport Scans">1</div>
+                        <div class="step" data-desc="Bank Account Details">2</div>
+                        <div class="step" data-desc="Review & Submit">3</div>
+                    </div>
+                    <p class="maintxt">Examle:</p>
+                    <div class="image_passport"></div>
 
-
-
-            <div id="steps">
-                <div class="step active" data-desc="Passport Scans">1</div>
-                <div class="step" data-desc="Bank Account Details">2</div>
-                <div class="step" data-desc="Review & Submit">3</div>
-            </div>
-
-
-
-            <p class="maintxt">Examle:</p>
-
-            <div class="image_passport"></div>
-
-
-
-
-
-            <!-- Images Upload -->
-            <form action="/upload-image" class="dropzone needsclick dz-clickable" id="demo-upload"
-                enctype="multipart/form-data" method="POST">
-                <div class="dz-default dz-message">
-                    <button class="dz-button" type="button" onchange="updateSize()">Drag & Drop<br>your passport scans
-                        here</button>
-                    <input type="hidden" name="_csrf" value="${_csrf.token}" />
+                                    <!-- Images Upload -->
+                    <div action="/upload-image" class="dropzone needsclick dz-clickable" id="demo-upload" enctype="multipart/form-data" method="POST">
+                        <div class="dz-default dz-message">
+                            <button class="dz-button" type="button" onchange="updateSize()">Drag & Drop<br>your passport scans here</button>
+                            <input type="hidden" name="_csrf" value="${_csrf.token}" />
+                        </div>
+                    </div>
+                    <div class="wrapview" id="toscnd">
+                        <a href="#secondstep">
+                            <div class="button_proj">Next</div>
+                        </a>
+                    </div>
+                    <br />
                 </div>
-            </form>
-            <br />
-            <div class="wrapview" id="toscnd">
-                <a href="#secondstep">
-                    <div class="button_proj">Next</div>
-                </a>
-            </div>
-        </div>
 
-        <div class="secondstep" id="secondstep">
-            <p class="maintxt">Verify your profile</p>
-
-
-
-            <div id="steps">
-                <div class="step done" data-desc="Passport Scans">1</div>
-                <div class="step active" data-desc="Bank Account Details">2</div>
-                <div class="step" data-desc="Review & Submit">3</div>
-            </div>
-
-
-
-            <form action="https://developer.mozilla.org/ru/docs/Web/API/WindowEventHandlers/onbeforeunload"
-                class="create_pr_form1" method="post" id="filter_form">
-                <div class="wr2">
+                <div class="secondstep tab" id="secondstep">
+                    <div id="steps">
+                        <div class="step done" data-desc="Passport Scans">1</div>
+                        <div class="step active" data-desc="Bank Account Details">2</div>
+                        <div class="step" data-desc="Review & Submit">3</div>
+                    </div>
                     <div class="create_pr_wrap">
                         <div class="create_proj">
-
+                            
                             <p>Тут треба буде вставити форму LiqPay</p>
 
                         </div>
                     </div>
+                    <div class="wrapview">
+                        <a href="#thirdstep">
+                            <div class="button_proj">Next</div>
+                        </a>
+                    </div>
+                    <div class="wrapview">
+                        <a href="#firststep">
+                            <div class="cancel" id="cancel">Back</div>
+                        </a>
+                    </div>
                 </div>
-            </form>
-            <div class="wrapview" id="toscnd">
-                <a href="#thirdstep">
-                    <div class="button_proj">Next</div>
-                </a>
-            </div>
-            <div class="wrapview">
-                <a href="#firststep">
-                    <div class="cancel" id="cancel">Back</div>
-                </a>
-            </div>
-        </div>
-        <div class="thirdstep" id="thirdstep">
-            <p class="maintxt">Verify your profile</p>
 
-
-
-            <div id="steps">
-                <div class="step done" data-desc="Passport Scans">1</div>
-                <div class="step done" data-desc="Bank Account Details">2</div>
-                <div class="step active" data-desc="Review & Submit">3</div>
-            </div>
-
-
-            <p style="text-align: center;">We are reviewing your documents data. <br>Wait untill you are verified.</p>
-            <div class="image_docs_review"></div>
-        </div>
-        <!-- <ul class="list l1">
-            <li class="item i2"> Быстро </li>
-            <li class="item i3"> Сильно </li>
-        </ul>
-        <ul class="list l2">
-            <li class="item i1"> Выше </li>
-            <li class="item i1"> Высоко </li>
-            <li class="item i3"> Сильнее </li>
-        </ul>
-        <p class="ll">ggg</p> -->
-
+                <div class="thirdstep tab" id="thirdstep">
+                    <div id="steps">
+                        <div class="step done" data-desc="Passport Scans">1</div>
+                        <div class="step done" data-desc="Bank Account Details">2</div>
+                        <div class="step active" data-desc="Review & Submit">3</div>
+                    </div>
+                    <p style="text-align: center;">We are reviewing your documents data. <br>Wait untill you are verified.</p>
+                    <div class="image_docs_review"></div>
+                </div>
         <footer>
-
+            
             <div class="links">
                 <div class="block1">
                     <div class="row hr"><a href="#">Legal</a></div>
@@ -168,7 +127,6 @@
     <script src="../static/js/dropzone-amd-module.js"></script>
     <script src="../static/js/dropzone.js"></script>
     <script src="../static/js/dropzone.js.map"></script>
-    <script src="../static/js/verification.js"></script>
 
 
     <!-- <script>
